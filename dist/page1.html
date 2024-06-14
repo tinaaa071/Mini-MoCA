@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>哈佛富盈診所健診表單</title>
+    <title>Mini-MoCA</title>
 
     <!-- Main css -->
     <link rel="stylesheet" href="../output.css" />
@@ -14,9 +14,9 @@
     <section class="h-screen overflow-y-hidden text-center ">
       <!-- Nav -->
       <nav class="flex justify-between p-6 align-middle">
-        <button onclick="goBack()" class="px-4 py-3 font-bold text-blue-500 bg-gray-200 rounded-full">
+        <a href="../index.html" class="px-4 py-3 font-bold text-blue-500 bg-gray-200 rounded-full">
           <i class="text-4xl fa-solid fa-arrow-left"></i>
-        </button>
+        </a>
         <h1 class="text-4xl text-gray-600">新個案初檢</h1>
         <a href="url_of_your_other_page" class="text-2xl text-gray-600">
           <i class="mr-2 fa-regular fa-clipboard"></i>
@@ -49,16 +49,16 @@
                 <label for="quantity" class="text-gray-700">案號:18</label>
               </div>
               <!-- 欄位 -->
-              <div class="flex flex-col gap-6 text-gray-500">
+              <div class="flex flex-col gap-6 text-2xl text-gray-500">
                 <!-- 姓名 -->
-                <div class="flex items-center gap-4">
-                  <label for="input-label" class="block mb-2 text-xl font-medium whitespace-nowrap">姓名</label>
-                  <input type="text" id="input-label" class="block w-full px-4 py-3 text-lg border-gray-200 rounded-lg focus:border-amber-300 focus:ring-amber-300 disabled:opacity-50 disabled:pointer-events-none " placeholder="">
+                <div class="flex items-center gap-8">
+                  <label for="input-label" class="block mb-2 font-medium whitespace-nowrap">姓名</label>
+                  <input type="text" id="input-label" class="block w-full px-4 py-3 border-gray-200 rounded-lg focus:border-amber-300 focus:ring-amber-300 disabled:opacity-50 disabled:pointer-events-none " placeholder="">
                 </div>
                 <!-- 年齡 -->
-                <div class="flex items-center gap-4">
-                  <label for="input-label" class="block mb-2 text-xl font-medium whitespace-nowrap">年齡</label>
-                  <select class="block w-full px-4 py-3 text-lg text-center border-gray-200 rounded-lg pe-9 focus:border-amber-300 focus:ring-amber-300 disabled:opacity-50 disabled:pointer-events-none">
+                <div class="flex items-center gap-8">
+                  <label for="input-label" class="block mb-2 font-medium whitespace-nowrap">年齡</label>
+                  <select class="block w-full px-4 py-3 text-2xl text-center border-gray-200 rounded-lg pe-9 focus:border-amber-300 focus:ring-amber-300 disabled:opacity-50 disabled:pointer-events-none">
                     <option selected="">請選擇</option>
                     <option>1</option>
                     <option>2</option>
@@ -66,31 +66,31 @@
                   </select>
                 </div>
                 <!-- 性別 -->
-                <div class="flex items-center gap-4">
-                  <label for="input-label" class="block mb-2 text-xl font-medium whitespace-nowrap">性別</label>
+                <div class="flex items-center gap-8">
+                  <label for="input-label" class="block mb-2 font-medium whitespace-nowrap">性別</label>
                   <div class="inline-flex w-full rounded-lg shadow-sm">
-                    <button type="button" class="inline-flex items-center justify-center w-full px-4 py-3 text-lg font-medium text-gray-800 bg-white border border-gray-200 shadow-sm gap-x-2 -ms-px first:rounded-s-lg first:ms-0 last:rounded-e-lg focus:z-10 hover:bg-amber-300 disabled:opacity-50 disabled:pointer-events-none">
+                    <button type="button" class="inline-flex items-center justify-center w-full px-4 py-3 font-medium text-gray-800 bg-white border border-gray-200 shadow-sm gap-x-2 -ms-px first:rounded-s-lg first:ms-0 last:rounded-e-lg focus:z-10 hover:bg-amber-300 disabled:opacity-50 disabled:pointer-events-none">
                       男
                     </button>
-                    <button type="button" class="inline-flex items-center justify-center w-full px-4 py-3 text-lg font-medium text-gray-800 bg-white border border-gray-200 shadow-sm gap-x-2 -ms-px first:rounded-s-lg first:ms-0 last:rounded-e-lg focus:z-10 hover:bg-amber-300 disabled:opacity-50 disabled:pointer-events-none">
+                    <button type="button" class="inline-flex items-center justify-center w-full px-4 py-3 font-medium text-gray-800 bg-white border border-gray-200 shadow-sm gap-x-2 -ms-px first:rounded-s-lg first:ms-0 last:rounded-e-lg focus:z-10 hover:bg-amber-300 disabled:opacity-50 disabled:pointer-events-none">
                       女
                     </button>
                   </div>
                 </div>
                 <!-- 教育 -->
-                <div class="flex items-center gap-4">
-                  <label for="input-label" class="block mb-2 text-xl font-medium whitespace-nowrap">教育</label>
+                <div class="flex items-center gap-8">
+                  <label for="input-label" class="block mb-2 font-medium whitespace-nowrap">教育</label>
                   <div class="inline-flex w-full rounded-lg shadow-sm">
-                    <button type="button" class="inline-flex items-center justify-center w-full px-4 py-3 text-lg font-medium text-gray-800 bg-white border border-gray-200 shadow-sm gap-x-2 -ms-px first:rounded-s-lg first:ms-0 last:rounded-e-lg focus:z-10 hover:bg-amber-300 disabled:opacity-50 disabled:pointer-events-none">
+                    <button type="button" class="inline-flex items-center justify-center w-full px-4 py-3 font-medium text-gray-800 bg-white border border-gray-200 shadow-sm gap-x-2 -ms-px first:rounded-s-lg first:ms-0 last:rounded-e-lg focus:z-10 hover:bg-amber-300 disabled:opacity-50 disabled:pointer-events-none">
                       高中以上
                     </button>
-                    <button type="button" class="inline-flex items-center justify-center w-full px-4 py-3 text-lg font-medium text-gray-800 bg-white border border-gray-200 shadow-sm gap-x-2 -ms-px first:rounded-s-lg first:ms-0 last:rounded-e-lg focus:z-10 hover:bg-amber-300 disabled:opacity-50 disabled:pointer-events-none">
+                    <button type="button" class="inline-flex items-center justify-center w-full px-4 py-3 font-medium text-gray-800 bg-white border border-gray-200 shadow-sm gap-x-2 -ms-px first:rounded-s-lg first:ms-0 last:rounded-e-lg focus:z-10 hover:bg-amber-300 disabled:opacity-50 disabled:pointer-events-none">
                       國中
                     </button>
-                    <button type="button" class="inline-flex items-center justify-center w-full px-4 py-3 text-lg font-medium text-gray-800 bg-white border border-gray-200 shadow-sm gap-x-2 -ms-px first:rounded-s-lg first:ms-0 last:rounded-e-lg focus:z-10 hover:bg-amber-300 disabled:opacity-50 disabled:pointer-events-none">
+                    <button type="button" class="inline-flex items-center justify-center w-full px-4 py-3 font-medium text-gray-800 bg-white border border-gray-200 shadow-sm gap-x-2 -ms-px first:rounded-s-lg first:ms-0 last:rounded-e-lg focus:z-10 hover:bg-amber-300 disabled:opacity-50 disabled:pointer-events-none">
                       國小
                     </button>
-                    <button type="button" class="inline-flex items-center justify-center w-full px-4 py-3 text-lg font-medium text-gray-800 bg-white border border-gray-200 shadow-sm gap-x-2 -ms-px first:rounded-s-lg first:ms-0 last:rounded-e-lg focus:z-10 hover:bg-amber-300 disabled:opacity-50 disabled:pointer-events-none">
+                    <button type="button" class="inline-flex items-center justify-center w-full px-4 py-3 font-medium text-gray-800 bg-white border border-gray-200 shadow-sm gap-x-2 -ms-px first:rounded-s-lg first:ms-0 last:rounded-e-lg focus:z-10 hover:bg-amber-300 disabled:opacity-50 disabled:pointer-events-none">
                       未受教育
                     </button>
                   </div>
@@ -98,7 +98,7 @@
               </div>
             </div>
             <!-- 按鈕 -->
-            <a href="" class="px-12 py-5 text-3xl font-bold text-gray-900 rounded-full bg-amber-300 w-fit">
+            <a href="page1-1.html" class="px-12 py-5 text-3xl font-bold text-gray-900 rounded-full bg-amber-300 w-fit">
               下一頁
             </a>
           </div>
