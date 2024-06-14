@@ -1,0 +1,10 @@
+@layer components {
+    .section {
+        @apply max-w-7xl w-full mx-auto px-4 py-8 sm:px-6 lg:px-36 md:py-24 gap-6 md:gap-16 flex flex-col text-gray-900
+    }
+    .nav__BTN {
+        @apply text-blue-500 hover:text-white text-lg
+    }
+    
+
+}

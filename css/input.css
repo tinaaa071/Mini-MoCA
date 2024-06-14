@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Water+Brush&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+html {
+  scroll-behavior: smooth;
+}
+
+.arrow {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+.arrow.active {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.swiper {
+  --swiper-theme-color: white;
+  --swiper-navigation-color: white;
+  --swiper-navigation-size: 30px;
+}
+
+.mainMenu > li > a {
+  display: block;
+}
+
+@-webkit-keyframes carousel {
+  0% {
+    -webkit-transform: translatex(0);
+            transform: translatex(0);
+  }
+  100% {
+    -webkit-transform: translatex(-100%);
+            transform: translatex(-100%);
+  }
+}
+
+@keyframes carousel {
+  0% {
+    -webkit-transform: translatex(0);
+            transform: translatex(0);
+  }
+  100% {
+    -webkit-transform: translatex(-100%);
+            transform: translatex(-100%);
+  }
+}
+.wrapper:hover .carousel {
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+
+.carousel {
+  display: inline-block;
+  -webkit-animation: 20s carousel infinite linear;
+          animation: 20s carousel infinite linear;
+}
+
+.carousel__slide {
+  display: inline-block;
+  height: 50px;
+  width: 100px;
+  margin: 0 40px;
+}
+
+/* Animation */
+.parallax > use {
+  -webkit-animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+          animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+}
+
+.parallax > use:nth-child(1) {
+  -webkit-animation-delay: -2s;
+          animation-delay: -2s;
+  -webkit-animation-duration: 7s;
+          animation-duration: 7s;
+}
+
+.parallax > use:nth-child(2) {
+  -webkit-animation-delay: -3s;
+          animation-delay: -3s;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+}
+
+.parallax > use:nth-child(3) {
+  -webkit-animation-delay: -4s;
+          animation-delay: -4s;
+  -webkit-animation-duration: 13s;
+          animation-duration: 13s;
+}
+
+.parallax > use:nth-child(4) {
+  -webkit-animation-delay: -5s;
+          animation-delay: -5s;
+  -webkit-animation-duration: 20s;
+          animation-duration: 20s;
+}
+
+@-webkit-keyframes move-forever {
+  0% {
+    -webkit-transform: translate3d(-90px, 0, 0);
+            transform: translate3d(-90px, 0, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(85px, 0, 0);
+            transform: translate3d(85px, 0, 0);
+  }
+}
+
+@keyframes move-forever {
+  0% {
+    -webkit-transform: translate3d(-90px, 0, 0);
+            transform: translate3d(-90px, 0, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(85px, 0, 0);
+            transform: translate3d(85px, 0, 0);
+  }
+}
+@layer components {
+  .section {
+    @apply max-w-7xl w-full mx-auto px-4 py-8 sm:px-6 lg:px-36 md:py-24 gap-6 md:gap-16 flex flex-col text-gray-900;
+  }
+  .nav__BTN {
+    @apply text-blue-500 hover:text-white text-lg;
+  }
+}/*# sourceMappingURL=input.css.map */
