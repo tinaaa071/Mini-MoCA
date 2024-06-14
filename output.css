@@ -1322,6 +1322,14 @@ input:checked + .toggle-bg{
   left: 0.5rem;
 }
 
+.right-6{
+  right: 1.5rem;
+}
+
+.top-6{
+  top: 1.5rem;
+}
+
 .z-10{
   z-index: 10;
 }
@@ -1427,6 +1435,10 @@ input:checked + .toggle-bg{
 
 .mr-4{
   margin-right: 1rem;
+}
+
+.mr-6{
+  margin-right: 1.5rem;
 }
 
 .block{
