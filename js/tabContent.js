@@ -72,10 +72,10 @@ document.querySelector('.change-content-button').addEventListener('click', funct
     </div>
     <!-- 按鈕 -->
     <div class="flex justify-center gap-6">
-      <button  class="px-12 py-5 text-3xl font-bold text-gray-600 bg-white border border-gray-600 rounded-full w-fit">
+      <button id="edit" onclick="goBack()" class="px-12 py-5 text-3xl font-bold text-gray-600 bg-white border border-gray-600 rounded-full w-fit">
         編輯個案資訊
       </button>
-      <a href="測前設定.html" class="px-12 py-5 text-3xl font-bold text-gray-900 rounded-full bg-amber-300 w-fit">
+      <a href="個案測前觀察.html" class="px-12 py-5 text-3xl font-bold text-gray-900 rounded-full bg-amber-300 w-fit">
         下一步
       </a>
   </div>
