@@ -13,11 +13,11 @@
   <body>
     <section class="h-screen overflow-y-scroll text-center ">
       <!-- Nav -->
-      <nav class="flex justify-between p-6 align-middle">
+      <nav class="relative flex justify-between p-6 align-middle">
         <a href="../index.html" class="z-10 px-4 py-3 font-bold text-blue-500 bg-gray-200 rounded-full h-fit">
           <i class="text-4xl fa-solid fa-arrow-left"></i>
         </a>
-        <h1 class="absolute left-0 right-0 z-0 py-4 mx-auto text-4xl text-center text-gray-600">新個案初檢</h1>
+        <h1 id="title" class="absolute left-0 right-0 z-0 py-4 mx-auto text-4xl text-center text-gray-600">新個案初檢</h1>
         <a href="url_of_your_other_page" class="z-10 py-4 text-2xl text-gray-600">
           <i class="mr-2 fa-regular fa-clipboard"></i>
           待評分個案
@@ -98,7 +98,7 @@
               </div>
             </div>
             <!-- 按鈕 -->
-            <a href="個案檢測觀察.html" class="px-12 py-5 text-3xl font-bold text-gray-900 rounded-full bg-amber-300 w-fit">
+            <a href="個案測前觀察.html" class="px-12 py-5 text-3xl font-bold text-gray-900 rounded-full bg-amber-300 w-fit">
               下一頁
             </a>
           </div>
@@ -121,6 +121,7 @@
     <!-- jQuery main -->
     <script src="../js/jquery-3.6.3.min.js"></script>
     <script src="../js/goback.js"></script>
+    <script src="../js/changeTitle.js"></script>
   
     <!-- Preline -->
     <script src="../node_modules/preline/dist/preline.js"></script>
