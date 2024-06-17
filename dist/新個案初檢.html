@@ -40,7 +40,7 @@
         <!-- 內容 -->
         <div class="h-full p-8 bg-blue-200/75">
           <!-- 內容1 -->
-          <div id="basic-tabs-1" role="tabpanel" aria-labelledby="basic-tabs-item-1" class="px-60">
+          <div id="basic-tabs-1" role="tabpanel" aria-labelledby="basic-tabs-item-1" class="max-w-5xl mx-auto">
             <!-- 表格 -->
             <div class="p-8 mb-12 rounded-2xl bg-blue-50">
               <!-- 表頭 -->
@@ -52,12 +52,12 @@
               <div class="flex flex-col gap-6 text-2xl text-gray-500">
                 <!-- 姓名 -->
                 <div class="flex items-center gap-8">
-                  <label for="input-label" class="block mb-2 font-medium whitespace-nowrap">姓名</label>
+                  <label for="input-label" class="font-medium whitespace-nowrap">姓名</label>
                   <input type="text" id="input-label" class="block w-full px-4 py-3 border-gray-200 rounded-lg focus:border-amber-300 focus:ring-amber-300 disabled:opacity-50 disabled:pointer-events-none " placeholder="">
                 </div>
                 <!-- 年齡 -->
                 <div class="flex items-center gap-8">
-                  <label for="input-label" class="block mb-2 font-medium whitespace-nowrap">年齡</label>
+                  <label for="input-label" class="font-medium whitespace-nowrap">年齡</label>
                   <select class="block w-full px-4 py-3 text-2xl text-center border-gray-200 rounded-lg pe-9 focus:border-amber-300 focus:ring-amber-300 disabled:opacity-50 disabled:pointer-events-none">
                     <option selected="">請選擇</option>
                     <option>1</option>
@@ -67,7 +67,7 @@
                 </div>
                 <!-- 性別 -->
                 <div class="flex items-center gap-8">
-                  <label for="input-label" class="block mb-2 font-medium whitespace-nowrap">性別</label>
+                  <label for="input-label" class="font-medium whitespace-nowrap">性別</label>
                   <div class="inline-flex w-full rounded-lg shadow-sm">
                     <button type="button" class="inline-flex items-center justify-center w-full px-4 py-3 font-medium text-gray-800 bg-white border border-gray-200 shadow-sm gap-x-2 -ms-px first:rounded-s-lg first:ms-0 last:rounded-e-lg focus:z-10 hover:bg-amber-300 disabled:opacity-50 disabled:pointer-events-none">
                       男
@@ -79,7 +79,7 @@
                 </div>
                 <!-- 教育 -->
                 <div class="flex items-center gap-8">
-                  <label for="input-label" class="block mb-2 font-medium whitespace-nowrap">教育</label>
+                  <label for="input-label" class="font-medium whitespace-nowrap">教育</label>
                   <div class="inline-flex w-full rounded-lg shadow-sm">
                     <button type="button" class="inline-flex items-center justify-center w-full px-4 py-3 font-medium text-gray-800 bg-white border border-gray-200 shadow-sm gap-x-2 -ms-px first:rounded-s-lg first:ms-0 last:rounded-e-lg focus:z-10 hover:bg-amber-300 disabled:opacity-50 disabled:pointer-events-none">
                       高中以上
@@ -98,21 +98,63 @@
               </div>
             </div>
             <!-- 按鈕 -->
-            <a href="個案測前觀察.html" class="px-12 py-5 text-3xl font-bold text-gray-900 rounded-full bg-amber-300 w-fit">
+            <a id="nextPage" href="個案測前觀察.html" class="px-12 py-5 text-3xl font-bold text-gray-900 rounded-full bg-amber-300 w-fit">
               下一頁
             </a>
+            <div id="editGroup" class="hidden">
+              <div class="flex justify-center gap-6">
+                <button id="edit" onclick="goBack()" class="px-12 py-5 text-3xl font-bold text-gray-600 bg-white border border-gray-600 rounded-full w-fit">
+                  編輯個案資訊
+                </button>
+                <a href="測前設定.html" class="px-12 py-5 text-3xl font-bold text-gray-900 rounded-full bg-amber-300 w-fit">
+                  下一步
+                </a>
+              </div>
+            </div>
           </div>
           
           <!-- 內容2 -->
-          <div id="basic-tabs-2" class="hidden" role="tabpanel" aria-labelledby="basic-tabs-item-2">
-            <p class="text-gray-500 dark:text-neutral-400">
-              This is the <em class="font-semibold text-gray-800 dark:text-neutral-200">second</em> item's tab body.
-            </p>
-          </div>
-          <div id="basic-tabs-3" class="hidden" role="tabpanel" aria-labelledby="basic-tabs-item-3">
-            <p class="text-gray-500 dark:text-neutral-400">
-              This is the <em class="font-semibold text-gray-800 dark:text-neutral-200">third</em> item's tab body.
-            </p>
+          <div id="basic-tabs-2" class="justify-center hidden max-w-5xl mx-auto text-2xl tab-content2" role="tabpanel" aria-labelledby="basic-tabs-item-2">
+            <div id="tab-content2">
+              <!-- 搜尋 -->
+              <div class="relative mb-12">
+                <input type="text" id="input-label" class="block w-full px-4 py-3 border-gray-200 rounded-lg focus:border-amber-300 focus:ring-amber-300 disabled:opacity-50 disabled:pointer-events-none placeholder:text-gray-400" placeholder="請輸入案號或個案姓名">
+                <div class="absolute inset-y-0 flex items-center end-0 pe-6">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+              </div>
+              <!-- 個案列表 -->
+              <div class="flex flex-col gap-6">
+                <!-- 標題 -->
+                <div class="flex items-center justify-between text-gray-500">
+                  <p>請選擇個案</p>
+                  <select class="block px-4 py-3 border-gray-200 rounded-lg w-fit pe-9 focus:border-amber-300 focus:ring-amber-300 disabled:opacity-50 disabled:pointer-events-none ">
+                    <option selected="">依案號</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                  </select>
+                </div>
+                <!-- 個案列表 -->
+                <div class="grid grid-cols-4 gap-4">
+                  <button class="py-4 bg-white hover:bg-amber-300 focus:bg-amber-300 rounded-xl change-content-button">
+                    1. 陳小美
+                  </button>
+                  <button class="py-4 bg-white hover:bg-amber-300 focus:bg-amber-300 rounded-xl change-content-button">
+                    1. 陳小美
+                  </button>
+                  <button class="py-4 bg-white hover:bg-amber-300 focus:bg-amber-300 rounded-xl change-content-button">
+                    1. 陳小美
+                  </button>
+                  <button class="py-4 bg-white hover:bg-amber-300 focus:bg-amber-300 rounded-xl change-content-button">
+                    1. 陳小美
+                  </button>
+                  <button class="py-4 bg-white hover:bg-amber-300 focus:bg-amber-300 rounded-xl change-content-button">
+                    1. 陳小美
+                  </button>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -122,6 +164,9 @@
     <script src="../js/jquery-3.6.3.min.js"></script>
     <script src="../js/goback.js"></script>
     <script src="../js/changeTitle.js"></script>
+    <script src="../js/tabContent.js"></script>
+    <script src="../js/edit.js"></script>
+
   
     <!-- Preline -->
     <script src="../node_modules/preline/dist/preline.js"></script>
