@@ -336,57 +336,56 @@
           <!-- 定向感 -->
           <div id="segment-2" class="hidden" role="tabpanel" aria-labelledby="segment-item-2">
             <!-- 內容 -->
-            <div class="grid grid-cols-10 gap-6 text-left">
+            <div class="grid grid-cols-10 gap-6 mb-6 text-left">
               <!-- 左 -->
-              <div class="col-span-4">
+              <div class="flex flex-col col-span-4">
                 <p class="mb-4 text-2xl text-blue-600">
                   施測項目：今天日期（共 3 分）
                 </p>
-                <div class="grid h-full grid-cols-2 gap-4 text-6xl text-right">
-                <div class="col-span-2 p-12 border border-gray-200 bg-sky-100 place-content-center">
-                  年
+                <div class="grid flex-grow grid-cols-2 gap-4 text-6xl text-right">
+                  <div class="flex items-center justify-center col-span-2 p-12 border border-gray-200 bg-sky-100">
+                    年
+                  </div>
+                  <div class="flex items-center justify-center p-12 border border-gray-200 bg-sky-100">
+                    月
+                  </div>
+                  <div class="flex items-center justify-center p-12 border border-gray-200 bg-sky-100">
+                    日
+                  </div>
+                  <div class="flex items-start justify-start col-span-2 p-12 text-left border border-gray-200 bg-sky-100">
+                    星期
+                  </div>
                 </div>
-                <div class="p-12 border border-gray-200 bg-sky-100 place-content-center">
-                  月
-                </div>
-                <div class="p-12 border border-gray-200 bg-sky-100 place-content-center">
-                  日
-                </div>
-                <div class="col-span-2 p-12 text-left border border-gray-200 bg-sky-100 place-content-start">
-                  星期
-                </div>
-              </div>
               </div>
               <!-- 中 -->
-              <div class="col-span-3">
+              <div class="flex flex-col col-span-3">
                 <p class="mb-4 text-2xl text-gray-600">
                   標準答案參考
                 </p>
-                <div class="grid h-full grid-cols-2 gap-4 text-3xl text-center">
-                <div class="col-span-2 p-12 border border-gray-200 bg-sky-50 place-content-center">
-                  111 年
+                <div class="grid flex-grow grid-cols-2 gap-4 text-3xl text-center">
+                  <div class="flex items-center justify-center col-span-2 p-12 border border-gray-200 bg-sky-50">
+                    111 年
+                  </div>
+                  <div class="flex items-center justify-center p-12 border border-gray-200 bg-sky-50">
+                    11 月
+                  </div>
+                  <div class="flex items-center justify-center p-12 border border-gray-200 bg-sky-50">
+                    11 日
+                  </div>
+                  <div class="flex items-center justify-center col-span-2 p-12 border border-gray-200 bg-sky-50">
+                    星期一
+                  </div>
                 </div>
-                <div class="p-12 border border-gray-200 bg-sky-50 place-content-center">
-                  11 月
-                </div>
-                <div class="p-12 border border-gray-200 bg-sky-50 place-content-center">
-                  11 日
-                </div>
-                <div class="col-span-2 p-12 border border-gray-200 bg-sky-50 place-content-center">
-                  星期一
-                </div>
-              
-              </div>
               </div>
               <!-- 右 -->
-              <div class="col-span-3">
+              <div class="flex flex-col col-span-3">
                 <p class="mb-4 text-2xl text-gray-600">
                   施測人員：
                   <span>
                     許ＯＯ
                   </span>
                 </p>
-                <div class="h-full p-4 text-xl border border-gray-200 bg-sky-50 ">
+                <div class="flex flex-col flex-grow p-4 text-xl border border-gray-200 bg-sky-50">
                   <p class="mb-2">此測驗得分：
                     <span>0</span>
                   </p>
@@ -410,43 +409,343 @@
             </div>
             <!-- 按鈕 -->
             <div class="flex justify-between ">
-              <button onclick="" class="px-12 py-5 text-3xl font-bold text-gray-400 bg-gray-100 border-4 border-gray-200 rounded-full w-fit">
+              <button onclick="" id="prePage" class="px-12 py-5 text-3xl font-bold text-gray-300 bg-gray-100 border-4 border-gray-200 rounded-full cursor-default w-fit">
                 上一題
               </button>
-              <button onclick="" class="px-12 py-5 text-3xl font-bold text-gray-900 rounded-full bg-amber-300 w-fit">
+              <button onclick="switchTab(3)" id="nextPage" class="px-12 py-5 text-3xl font-bold text-gray-900 rounded-full bg-amber-300 w-fit">
                 下一題
               </button>
             </div>
           </div>
           <!-- 執行 / 專注 -->
           <div id="segment-3" class="hidden" role="tabpanel" aria-labelledby="segment-item-3">
-            <p class="text-gray-500 ">
-              This is the <em class="font-semibold text-gray-800 ">third</em> item's tab body.
-            </p>
+            <!-- 內容 -->
+            <div class="grid grid-cols-10 gap-6 mb-6 text-left">
+              <!-- 左 -->
+              <div class="flex flex-col col-span-7">
+                <p class="mb-4 text-2xl text-blue-600">
+                  施測項目：畫時鐘 
+                  <time>11:00</time>（
+                  共 3 分）
+                </p>
+                <div class="h-full border border-gray-200 bg-sky-100">
+                  <img src="https://images.unsplash.com/photo-1714983020617-9397757fd58d?q=80&w=2746&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                </div>
+              </div>
+              
+              <!-- 右 -->
+              <div class="flex flex-col col-span-3">
+                <p class="mb-4 text-2xl text-gray-600">
+                  施測人員：
+                  <span>
+                    許ＯＯ
+                  </span>
+                </p>
+                <div class="flex flex-col flex-grow p-4 text-xl border border-gray-200 bg-sky-50">
+                  <p class="mb-2">此測驗得分：
+                    <span>3</span>
+                  </p>
+                  <p class="mb-4 text-lg">（全選才有得分）</p>
+                  <div class="grid grid-cols-2 gap-4 text-xl font-semibold">
+                    <button type="button" class="px-4 py-3 text-center text-white border border-transparent rounded-full bg-sky-500 hover:bg-sky-600 disabled:opacity-50 disabled:pointer-events-none">
+                      形狀
+                    </button>
+                    <button type="button" class="px-4 py-3 text-center bg-white border-2 rounded-full text-sky-500 border-sky-500 hover:bg-sky-500 disabled:opacity-50 disabled:pointer-events-none hover:text-white">
+                      數字
+                    </button>
+                    <button type="button" class="px-4 py-3 text-center bg-white border-2 rounded-full text-sky-500 border-sky-500 hover:bg-sky-500 disabled:opacity-50 disabled:pointer-events-none hover:text-white">
+                      指針
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- 按鈕 -->
+            <div class="flex justify-between ">
+              <button onclick="switchTab(2)" id="prePage" class="px-12 py-5 text-3xl font-bold text-gray-900 bg-gray-100 border-4 border-gray-300 rounded-full w-fit">
+                上一題
+              </button>
+              <button onclick="switchTab(4)" id="nextPage" class="px-12 py-5 text-3xl font-bold text-gray-900 rounded-full bg-amber-300 w-fit">
+                下一題
+              </button>
+            </div>
           </div>
           <!-- 專注 / 計算 -->
           <div id="segment-4" class="hidden" role="tabpanel" aria-labelledby="segment-item-4">
-            <p class="text-gray-500 ">
-              This is the <em class="font-semibold text-gray-800 ">4</em> item's tab body.
-            </p>
+            <!-- 內容 -->
+            <div class="grid grid-cols-10 gap-6 mb-6 text-left">
+              <!-- 左 -->
+              <div class="flex flex-col col-span-7">
+                <p class="mb-4 text-2xl text-blue-600">
+                  施測項目：100 開始連續減 7（共 5 分）
+                </p>
+                <div class="h-full ">
+                  <div class="grid grid-cols-3 gap-4">
+                    <div class="px-8 py-12 text-6xl text-center bg-white border border-gray-200">
+                      100
+                    </div>
+                    <div class="px-8 py-12 text-6xl text-center border border-gray-200 bg-sky-100">
+                      93
+                    </div>
+                    <div class="px-8 py-12 text-6xl text-center border border-gray-200 bg-sky-100">
+                      86
+                    </div>
+                    <div class="px-8 py-12 text-6xl text-center border border-gray-200 bg-sky-100">
+                      79
+                    </div>
+                    <div class="px-8 py-12 text-6xl text-center border border-gray-200 bg-sky-100">
+                      72
+                    </div>
+                    <div class="px-8 py-12 text-6xl text-center border border-gray-200 bg-sky-100">
+                      65
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- 右 -->
+              <div class="flex flex-col col-span-3">
+                <p class="mb-4 text-2xl text-gray-600">
+                  施測人員：
+                  <span>
+                    許ＯＯ
+                  </span>
+                </p>
+                <div class="flex flex-col flex-grow p-4 text-xl border border-gray-200 bg-sky-50">
+                  <p class="mb-2">此測驗得分：
+                    <span>5</span>
+                  </p>
+                  <p class="mb-4 text-lg">（全選才有得分）</p>
+                  <div class="grid grid-cols-3 gap-4 text-xl font-semibold">
+                    <button type="button" class="px-4 py-3 text-center text-white border border-transparent rounded-full bg-sky-500 hover:bg-sky-600 disabled:opacity-50 disabled:pointer-events-none">
+                      1
+                    </button>
+                    <button type="button" class="px-4 py-3 text-center bg-white border-2 rounded-full text-sky-500 border-sky-500 hover:bg-sky-500 disabled:opacity-50 disabled:pointer-events-none hover:text-white">
+                      2
+                    </button>
+                    <button type="button" class="px-4 py-3 text-center bg-white border-2 rounded-full text-sky-500 border-sky-500 hover:bg-sky-500 disabled:opacity-50 disabled:pointer-events-none hover:text-white">
+                      3
+                    </button>
+                    <button type="button" class="px-4 py-3 text-center bg-white border-2 rounded-full text-sky-500 border-sky-500 hover:bg-sky-500 disabled:opacity-50 disabled:pointer-events-none hover:text-white">
+                      4
+                    </button>
+                    <button type="button" class="px-4 py-3 text-center bg-white border-2 rounded-full text-sky-500 border-sky-500 hover:bg-sky-500 disabled:opacity-50 disabled:pointer-events-none hover:text-white">
+                      5
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- 按鈕 -->
+            <div class="flex justify-between ">
+              <button onclick="switchTab(3)" id="prePage" class="px-12 py-5 text-3xl font-bold text-gray-900 bg-gray-100 border-4 border-gray-300 rounded-full w-fit">
+                上一題
+              </button>
+              <button onclick="switchTab(5)" id="nextPage" class="px-12 py-5 text-3xl font-bold text-gray-900 rounded-full bg-amber-300 w-fit">
+                下一題
+              </button>
+            </div>
           </div>
           <!-- 視覺追蹤 -->
           <div id="segment-5" class="hidden" role="tabpanel" aria-labelledby="segment-item-5">
-            <p class="text-gray-500 ">
-              This is the <em class="font-semibold text-gray-800 ">5</em> item's tab body.
-            </p>
+            <!-- 內容 -->
+            <div class="grid grid-cols-10 gap-6 mb-6 text-left">
+              <!-- 左 -->
+              <div class="flex flex-col col-span-7">
+                <p class="mb-4 text-2xl text-blue-600">
+                  施測項目：彩繪路徑（共 1 分）
+                </p>
+                <div class="h-full border border-gray-200 bg-sky-100">
+                  <img src="https://images.unsplash.com/photo-1714983020617-9397757fd58d?q=80&w=2746&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                </div>
+              </div>
+              
+              <!-- 右 -->
+              <div class="flex flex-col col-span-3">
+                <p class="mb-4 text-2xl text-gray-600">
+                  施測人員：
+                  <span>
+                    許ＯＯ
+                  </span>
+                </p>
+                <div class="flex flex-col flex-grow p-4 text-xl border border-gray-200 bg-sky-50">
+                  <p class="mb-2">此測驗得分：
+                    <span>0</span>
+                  </p>
+                  <p class="mb-4 text-lg">（全選才有得分）</p>
+                  <div class="grid grid-cols-2 gap-4 text-xl font-semibold">
+                    <button type="button" class="px-4 py-3 text-center bg-white border-2 rounded-full text-sky-500 border-sky-500 hover:bg-sky-500 disabled:opacity-50 disabled:pointer-events-none hover:text-white">
+                      得分
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- 按鈕 -->
+            <div class="flex justify-between ">
+              <button onclick="switchTab(4)" id="prePage" class="px-12 py-5 text-3xl font-bold text-gray-900 bg-gray-100 border-4 border-gray-300 rounded-full w-fit">
+                上一題
+              </button>
+              <button onclick="switchTab(6)" id="nextPage" class="px-12 py-5 text-3xl font-bold text-gray-900 rounded-full bg-amber-300 w-fit">
+                下一題
+              </button>
+            </div>
           </div>
           <!-- 語言記憶 -->
           <div id="segment-6" class="hidden" role="tabpanel" aria-labelledby="segment-item-6">
-            <p class="text-gray-500 ">
-              This is the <em class="font-semibold text-gray-800 ">6</em> item's tab body.
-            </p>
+            <!-- 內容 -->
+            <div class="mb-6 space-y-8 text-left">
+              <!-- 語言理解 -->
+              <div class="grid grid-cols-10 gap-6">
+                <!-- 左 -->
+                <div class="col-span-7 ">
+                  
+                  <div>
+                    <p class="mb-4 text-2xl text-blue-600">
+                      施測項目：語言理解 / 命名（共 3 分）
+                    </p>
+                    <audio id="audioPlayer" controls class="w-full border-2 border-gray-300 rounded-full">
+                      <source src="your-song.mp3" type="audio/mpeg" class="">
+                    </audio>
+                  </div>
+                </div>
+                
+                <!-- 右 -->
+                <div class="flex flex-col col-span-3">
+                  <p class="mb-4 text-2xl text-gray-600">
+                    施測人員：
+                    <span>
+                      許ＯＯ
+                    </span>
+                  </p>
+                  <div class="flex flex-col flex-grow p-4 text-xl border border-gray-200 bg-sky-50">
+                    <p class="mb-2">此測驗得分：
+                      <span>2</span>
+                    </p>
+                    <p class="mb-4 text-lg">（全選才有得分）</p>
+                    <div class="grid grid-cols-2 gap-4 text-xl font-semibold">
+                      <button type="button" class="px-4 py-3 text-center text-white border border-transparent rounded-full bg-sky-500 hover:bg-sky-600 disabled:opacity-50 disabled:pointer-events-none">
+                        碗
+                      </button>
+                      <button type="button" class="px-4 py-3 text-center bg-white border-2 rounded-full text-sky-500 border-sky-500 hover:bg-sky-500 disabled:opacity-50 disabled:pointer-events-none hover:text-white">
+                        筷子
+                      </button>
+                      <button type="button" class="px-4 py-3 text-center bg-white border-2 rounded-full text-sky-500 border-sky-500 hover:bg-sky-500 disabled:opacity-50 disabled:pointer-events-none hover:text-white">
+                        衛生紙
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- 延遲記憶 -->
+              <div class="grid grid-cols-10 gap-6">
+                <!-- 左 -->
+                <div class="col-span-7 ">
+                  
+                  <div>
+                    <p class="mb-4 text-2xl text-blue-600">
+                      施測項目：延遲記憶 / 複誦物件（共 5 分）
+                    </p>
+                    <audio id="audioPlayer" controls class="w-full border-2 border-gray-300 rounded-full">
+                      <source src="your-song.mp3" type="audio/mpeg" class="">
+                    </audio>
+                  </div>
+                </div>
+                
+                <!-- 右 -->
+                <div class="flex flex-col col-span-3">
+                  <p class="mb-4 text-2xl text-gray-600">
+                    施測人員：
+                    <span>
+                      許ＯＯ
+                    </span>
+                  </p>
+                  <div class="flex flex-col flex-grow p-4 text-xl border border-gray-200 bg-sky-50">
+                    <p class="mb-2">此測驗得分：
+                      <span>3</span>
+                    </p>
+                    <p class="mb-4 text-lg">（全選才有得分）</p>
+                    <div class="grid grid-cols-2 gap-4 text-xl font-semibold">
+                      <button type="button" class="px-4 py-3 text-center text-white border border-transparent rounded-full bg-sky-500 hover:bg-sky-600 disabled:opacity-50 disabled:pointer-events-none">
+                        臉
+                      </button>
+                      <button type="button" class="px-4 py-3 text-center bg-white border-2 rounded-full text-sky-500 border-sky-500 hover:bg-sky-500 disabled:opacity-50 disabled:pointer-events-none hover:text-white">
+                        絨布
+                      </button>
+                      <button type="button" class="px-4 py-3 text-center bg-white border-2 rounded-full text-sky-500 border-sky-500 hover:bg-sky-500 disabled:opacity-50 disabled:pointer-events-none hover:text-white">
+                        教堂
+                      </button>
+                      <button type="button" class="px-4 py-3 text-center bg-white border-2 rounded-full text-sky-500 border-sky-500 hover:bg-sky-500 disabled:opacity-50 disabled:pointer-events-none hover:text-white">
+                        菊花
+                      </button>
+                      <button type="button" class="px-4 py-3 text-center bg-white border-2 rounded-full text-sky-500 border-sky-500 hover:bg-sky-500 disabled:opacity-50 disabled:pointer-events-none hover:text-white">
+                        紅色
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- 按鈕 -->
+            <div class="flex justify-between ">
+              <button onclick="switchTab(5)" id="prePage" class="px-12 py-5 text-3xl font-bold text-gray-900 bg-gray-100 border-4 border-gray-300 rounded-full w-fit">
+                上一題
+              </button>
+              <button onclick="switchTab(7)" id="nextPage" class="px-12 py-5 text-3xl font-bold text-gray-900 rounded-full bg-amber-300 w-fit">
+                下一題
+              </button>
+            </div>
           </div>
           <!-- 結算 -->
           <div id="segment-7" class="hidden" role="tabpanel" aria-labelledby="segment-item-7">
-            <p class="text-gray-500 ">
-              This is the <em class="font-semibold text-gray-800 ">7</em> item's tab body.
-            </p>
+            <!-- 內容 -->
+            <div class="grid grid-cols-10 gap-6 mb-6 text-left">
+              <!-- 左 -->
+              <div class="flex flex-col col-span-7">
+                <div class="mb-4 text-2xl text-gray-500">
+                  <p>
+                    檢測時間：
+                    <time datetime="2001-05-15T19:00">May 15</time>
+                  </p>
+                  <p>
+                    
+                  </p>
+                </div>
+                <div class="h-full border border-gray-200 bg-sky-100">
+                  <img src="https://images.unsplash.com/photo-1714983020617-9397757fd58d?q=80&w=2746&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                </div>
+              </div>
+              
+              <!-- 右 -->
+              <div class="flex flex-col col-span-3">
+                <p class="mb-4 text-2xl text-gray-600">
+                  施測人員：
+                  <span>
+                    許ＯＯ
+                  </span>
+                </p>
+                <div class="flex flex-col flex-grow p-4 text-xl border border-gray-200 bg-sky-50">
+                  <p class="mb-2">此測驗得分：
+                    <span>0</span>
+                  </p>
+                  <p class="mb-4 text-lg">（全選才有得分）</p>
+                  <div class="grid grid-cols-2 gap-4 text-xl font-semibold">
+                    <button type="button" class="px-4 py-3 text-center bg-white border-2 rounded-full text-sky-500 border-sky-500 hover:bg-sky-500 disabled:opacity-50 disabled:pointer-events-none hover:text-white">
+                      得分
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- 按鈕 -->
+            <div class="flex justify-between ">
+              <button onclick="switchTab(4)" id="prePage" class="px-12 py-5 text-3xl font-bold text-gray-900 bg-gray-100 border-4 border-gray-300 rounded-full w-fit">
+                上一題
+              </button>
+              <button onclick="switchTab(6)" id="nextPage" class="px-12 py-5 text-3xl font-bold text-gray-900 rounded-full bg-amber-300 w-fit">
+                下一題
+              </button>
+            </div>
           </div>
         </div>
       </div>
@@ -456,7 +755,7 @@
     <!-- jQuery main -->
     <script src="../js/jquery-3.6.3.min.js"></script>
     <script src="../js/goback.js"></script>
-    <script src="../js/next-question.js"></script>
+    <script src="../js/nextTab.js"></script>
   
     <!-- Preline -->
     <script src="../node_modules/preline/dist/preline.js"></script>
