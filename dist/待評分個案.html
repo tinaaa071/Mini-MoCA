@@ -701,61 +701,189 @@
             <!-- 內容 -->
             <div class="grid grid-cols-10 gap-6 mb-6 text-left">
               <!-- 左 -->
-              <div class="flex flex-col col-span-7">
-                <div class="mb-4 text-2xl text-gray-500">
+              <div class="flex flex-col max-h-screen col-span-7 gap-8 overflow-y-scroll">
+                <div class="flex justify-between mb-4 text-2xl text-gray-500">
                   <p>
                     檢測時間：
-                    <time datetime="2001-05-15T19:00">May 15</time>
+                    <time datetime="2024-07-02 T10:50">2024-07-02 10:50</time>
                   </p>
                   <p>
-                    
+                    花費時間：
+                    <time>04:49:12</time>
                   </p>
                 </div>
-                <div class="h-full border border-gray-200 bg-sky-100">
-                  <img src="https://images.unsplash.com/photo-1714983020617-9397757fd58d?q=80&w=2746&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                <!-- 施測項目 -->
+                <div class="p-4 text-2xl text-left text-gray-600 border border-gray-200 bg-blue-50 rounded-2xl">
+                  <p class="mb-4">施測項目與分數</p>
+                  <div class="grid grid-cols-2 text-xl text-gray-500 gap-y-8 gap-x-10">
+                    <div class="flex justify-between">
+                      <p>定向感</p>
+                      <p class="text-blue-700">3 / 4</p>
+                    </div>
+                    <div class="flex justify-between">
+                      <p>語言理解能力</p>
+                      <p class="text-blue-700">2 / 3</p>
+                    </div>
+                    <div class="flex justify-between">
+                      <p>執行 / 專注力</p>
+                      <p class="text-blue-700">1 / 3</p>
+                    </div>
+                    <div class="flex justify-between">
+                      <p>視覺追蹤能力</p>
+                      <p class="text-blue-700">0 / 1</p>
+                    </div>
+                    <div class="flex justify-between">
+                      <p>注意與計算能力</p>
+                      <p class="text-blue-700">4 / 5</p>
+                    </div>
+                    <div class="flex justify-between">
+                      <p>延遲記憶力</p>
+                      <p class="text-blue-700">4 / 5</p>
+                    </div>
+                  </div>
+               </div>
+               <div class="flex flex-col gap-8 text-2xl text-left">
+                <!-- 測前觀察 -->
+                <div class="g">
+                  <div class="inline-flex items-center gap-2 mb-4 text-gray-600">
+                    <i class="fa-regular fa-clipboard"></i>
+                    <p>測前觀察</p>
+                  </div>
+                  <div class="grid grid-cols-2 gap-6">
+                    <!-- 左 -->
+                    <div class="flex flex-col gap-6 p-4 text-xl text-white bg-blue-700 rounded-2xl">
+                      <!-- 狀態 -->
+                      <div>
+                          <p class="mb-4">情緒程度</p>
+                          <span class="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-lg  bg-sky-400 text-white ">
+                            平淡
+                          </span>
+                      </div>
+                      <!-- 備註 -->
+                      <div>
+                        <p class="mb-4">行為表現</p>
+                        <div class="w-full space-y-3">
+                          <textarea class="block w-full h-full px-4 py-3 text-sm border-gray-200 rounded-lg focus:border-amber-300 focus:ring-amber-300 disabled:opacity-50 disabled:pointer-events-none placeholder:text-gray-400" rows="6" placeholder="請輸入訊息"></textarea>
+                        </div>
+                    </div>
+                    </div>
+                    <!-- 右 -->
+                    <div class="flex flex-col gap-6 p-4 text-xl text-white bg-blue-700 rounded-2xl">
+                      <!-- 備註 -->
+                      <div class="col-span-2">
+                        <p class="mb-4">備註</p>
+                        <div class="w-full space-y-3">
+                          <textarea class="block w-full h-full px-4 py-3 text-sm border-gray-200 rounded-lg focus:border-amber-300 focus:ring-amber-300 disabled:opacity-50 disabled:pointer-events-none placeholder:text-gray-400" rows="11" placeholder="請輸入訊息"></textarea>
+                        </div>
+                    </div>
+                    </div>
+                  </div>
                 </div>
+                <!-- 檢後紀錄 -->
+                <div class="text-gray-600">
+                  <div class="inline-flex items-center gap-2 mb-4">
+                    <i class="fa-regular fa-clipboard"></i>
+                    <p>檢後紀錄</p>
+                  </div>
+                  <div class="grid grid-cols-3 p-4 text-xl text-white bg-blue-700 rounded-2xl">
+                    <!-- 狀態 -->
+                     <div class="grid gap-6">
+                      <div>
+                        <p class="mb-4">參與度</p>
+                        <span class="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-lg  bg-sky-400 text-white ">
+                          偶須鼓勵
+                        </span>
+                      </div>
+                      <div>
+                        <p class="mb-4">注意力</p>
+                        <span class="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-lg  bg-sky-400 text-white ">
+                          75% - 50%
+                        </span>
+                      </div>
+                      <div>
+                        <p class="mb-4">指令</p>
+                        <span class="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-lg  bg-sky-400 text-white ">
+                          2 - 3 個指令
+                        </span>
+                      </div>
+                      <div>
+                        <p class="mb-4">情緒程度</p>
+                        <span class="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-lg  bg-sky-400 text-white ">
+                          平淡
+                        </span>
+                      </div>
+                     </div>
+                     <!-- 備註 -->
+                     <div class="grid col-span-2 gap-6">
+                      <div>
+                        <p class="mb-4">行為表現</p>
+                        <div class="w-full space-y-3">
+                          <textarea class="block w-full h-full px-4 py-3 text-sm border-gray-200 rounded-lg focus:border-amber-300 focus:ring-amber-300 disabled:opacity-50 disabled:pointer-events-none placeholder:text-gray-400" rows="6" placeholder="請輸入訊息"></textarea>
+                        </div>
+                      </div>
+                      <div>
+                        <p class="mb-4">補充</p>
+                        <div class="w-full space-y-3">
+                          <textarea class="block w-full h-full px-4 py-3 text-sm border-gray-200 rounded-lg focus:border-amber-300 focus:ring-amber-300 disabled:opacity-50 disabled:pointer-events-none placeholder:text-gray-400" rows="6" placeholder="請輸入訊息"></textarea>
+                        </div>
+                      </div>
+                   </div>
+                  </div>
+                </div>
+               </div>
               </div>
               
               <!-- 右 -->
-              <div class="flex flex-col col-span-3">
-                <p class="mb-4 text-2xl text-gray-600">
-                  施測人員：
-                  <span>
-                    許ＯＯ
-                  </span>
-                </p>
-                <div class="flex flex-col flex-grow p-4 text-xl border border-gray-200 bg-sky-50">
-                  <p class="mb-2">此測驗得分：
-                    <span>0</span>
+              <div class="flex flex-col col-span-3 gap-6">
+                <!-- 分數 -->
+                <div class="flex flex-col col-span-2 gap-4 p-4 text-2xl text-gray-600 bg-white border-8 border-blue-600 rounded-2xl">
+                  <p class="text-left">總分</p>
+                  <p class="text-blue-600 text-8xl">17</p>
+                  <p class="text-right">/ 21</p>
+                </div>
+                <!-- 人員 -->
+                <div class="space-y-4 text-2xl text-gray-600">
+                  <p >
+                    施測人員：
+                    <span>
+                      許ＯＯ
+                    </span>
                   </p>
-                  <p class="mb-4 text-lg">（全選才有得分）</p>
-                  <div class="grid grid-cols-2 gap-4 text-xl font-semibold">
-                    <button type="button" class="px-4 py-3 text-center bg-white border-2 rounded-full text-sky-500 border-sky-500 hover:bg-sky-500 disabled:opacity-50 disabled:pointer-events-none hover:text-white">
-                      得分
-                    </button>
+                  <div>
+                    <p class="mb-2">評分者：</p>
+                    <select class="block w-full px-4 py-3 text-2xl text-center border-gray-200 rounded-lg pe-9 focus:border-amber-300 focus:ring-amber-300 disabled:opacity-50 disabled:pointer-events-none">
+                      <option selected="">請選擇評分人員</option>
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                    </select>
                   </div>
                 </div>
+                <!-- 送出 -->
+                <button  id="confirm" class="px-12 py-5 text-3xl font-bold text-gray-900 rounded-full bg-amber-300 w-fit">
+                  送出評分
+                  <i class="ml-2 fa-solid fa-arrow-right"></i>
+                </button>
               </div>
-            </div>
-            <!-- 按鈕 -->
-            <div class="flex justify-between ">
-              <button onclick="switchTab(4)" id="prePage" class="px-12 py-5 text-3xl font-bold text-gray-900 bg-gray-100 border-4 border-gray-300 rounded-full w-fit">
-                上一題
-              </button>
-              <button onclick="switchTab(6)" id="nextPage" class="px-12 py-5 text-3xl font-bold text-gray-900 rounded-full bg-amber-300 w-fit">
-                下一題
-              </button>
             </div>
           </div>
         </div>
       </div>
-      
     </section>
+
+    <!-- 送出成功提示 -->
+    <div id="overlay" class="fixed inset-0 z-50 flex items-center justify-center hidden">
+      <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+      <div class="absolute px-6 py-4 bg-white rounded-lg">
+        <p class="text-2xl font-bold text-gray-900">送出評分成功！</p>
+      </div>
+    </div>
   
     <!-- jQuery main -->
     <script src="../js/jquery-3.6.3.min.js"></script>
     <script src="../js/goback.js"></script>
     <script src="../js/nextTab.js"></script>
+    <script src="../js/confirmMessage.js"></script>
   
     <!-- Preline -->
     <script src="../node_modules/preline/dist/preline.js"></script>
