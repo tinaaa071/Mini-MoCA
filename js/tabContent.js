@@ -6,7 +6,7 @@ document.querySelector('.change-content-button').addEventListener('click', funct
     const newDiv = document.createElement('div');
     newDiv.className = 'new-content-div'; // Add any classes you want
     newDiv.innerHTML = `
-    <div class="h-full flex flex-col justify-start">
+    <div class="max-h-screen flex flex-col justify-start">
       
       <div class="grid grid-cols-12 gap-6">
         <!-- 左 -->
@@ -47,9 +47,9 @@ document.querySelector('.change-content-button').addEventListener('click', funct
             <p class="text-center text-gray-500 ">篩檢紀錄</p>
           </div>
           <!-- 欄位 -->
-          <div class="flex flex-col overflow-y-scroll text-2xl text-left text-gray-500 h-96">
+          <div class="flex flex-col overflow-y-scroll text-2xl text-left text-gray-500 max-h-screen ">
             <!-- 個案 -->
-            <a href="" class="px-2 py-4 border-b-2 border-gray-300 border-dashed ">
+            <a href="篩檢紀錄.html" class="px-2 py-4 border-b-2 border-gray-300 border-dashed rounded-lg hover:bg-amber-300 active:bg-amber-300">
               <div class="flex items-center justify-between mb-4 ">
                 <label for="input-label" class="font-medium text-gray-900 whitespace-nowrap ">
                   陳小美
@@ -68,7 +68,7 @@ document.querySelector('.change-content-button').addEventListener('click', funct
                 <time>04:49:12</time>
               </p>
             </a>
-            <a href="" class="px-2 py-4 border-b-2 border-gray-300 border-dashed ">
+            <a href="篩檢紀錄.html" class="px-2 py-4 border-b-2 border-gray-300 border-dashed rounded-lg hover:bg-amber-300 active:bg-amber-300">
               <div class="flex items-center justify-between mb-4 ">
                 <label for="input-label" class="font-medium text-gray-900 whitespace-nowrap ">
                   陳小美
@@ -87,7 +87,7 @@ document.querySelector('.change-content-button').addEventListener('click', funct
                 <time>04:49:12</time>
               </p>
             </a>
-            <a href="" class="px-2 py-4 border-b-2 border-gray-300 border-dashed ">
+            <a href="篩檢紀錄.html" class="px-2 py-4 border-b-2 border-gray-300 border-dashed rounded-lg hover:bg-amber-300 active:bg-amber-300">
               <div class="flex items-center justify-between mb-4 ">
                 <label for="input-label" class="font-medium text-gray-900 whitespace-nowrap ">
                   陳小美
@@ -106,7 +106,7 @@ document.querySelector('.change-content-button').addEventListener('click', funct
                 <time>04:49:12</time>
               </p>
             </a>
-            <a href="" class="px-2 py-4 border-b-2 border-gray-300 border-dashed ">
+            <a href="篩檢紀錄.html" class="px-2 py-4 border-b-2 border-gray-300 border-dashed rounded-lg hover:bg-amber-300 active:bg-amber-300">
               <div class="flex items-center justify-between mb-4 ">
                 <label for="input-label" class="font-medium text-gray-900 whitespace-nowrap ">
                   陳小美

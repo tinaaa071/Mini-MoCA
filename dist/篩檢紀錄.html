@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en" class="font-medium">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mini-MoCA</title>
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="../output.css" />
+
+  </head>
+  <body>
+    <section class="h-screen text-center ">
+      <!-- Nav -->
+      <nav class="flex items-center justify-between px-6 py-6 text-4xl text-white align-middle bg-blue-700">
+        <button onclick="goBack()" class="px-4 py-3 font-bold text-blue-500 bg-gray-200 rounded-full h-fit">
+          <i class="text-4xl transform fa-solid fa-xmark"></i>
+        </button>
+        <h1 class="py-4 text-center ">
+          1. 陳小美<span> 篩檢紀錄</span>
+        </h1>
+        <p class="text-2xl">未受教育</p>
+      </nav>
+      
+      <!-- 內容 -->
+      <div class="grid h-full grid-cols-2 ">
+        <!-- 左 -->
+         <div class="flex flex-col gap-8 p-8 bg-blue-200/75">
+          <!-- 花費時間 -->
+          <div class="text-xl">
+            <!-- 測驗時間 -->
+            <div class="flex justify-between mb-2">
+              <p class="text-blue-700">測驗時間
+                <time datetime="2024-07-02 T19:00">2024-07-02 19:00</time>
+              </p>
+              <p class="text-gray-500">施測者：
+                <span>許ＯＯ</span>
+              </p>
+            </div>
+            <!-- 花費時間 -->
+            <div class="flex justify-between">
+              <p class="text-blue-700">花費時間
+                <time>04:49:12</time>
+              </p>
+              <p class="text-gray-500">評分者：
+                <span>陳ＯＯ</span>
+              </p>
+            </div>
+          </div>
+          <!-- 分數 -->
+           <div class="grid grid-cols-6 gap-4">
+            <!-- 左 -->
+            <div class="flex flex-col col-span-2 gap-4 p-4 text-2xl text-gray-600 bg-white border-8 border-blue-600 rounded-2xl">
+              <p class="text-left">總分</p>
+              <p class="text-blue-600 text-8xl">17</p>
+              <p class="text-right">/ 21</p>
+            </div>
+            <!-- 右 -->
+            <div class="col-span-4 p-4 text-2xl text-left text-gray-600 bg-white border-8 border-white rounded-2xl">
+              <p class="mb-2">備註</p>
+              <div class="space-y-3">
+                <textarea class="block w-full h-full px-4 py-3 text-sm border-gray-200 rounded-lg focus:border-amber-300 focus:ring-amber-300 disabled:opacity-50 disabled:pointer-events-none placeholder:text-gray-400" rows="6" placeholder="請輸入訊息"></textarea>
+              </div>
+            </div>
+           </div>
+           <!-- 施測項目 -->
+          <div class="p-4 text-2xl text-left text-gray-600 bg-white rounded-2xl">
+            <p class="mb-4">施測項目與分數</p>
+            <div class="grid grid-cols-2 text-xl text-gray-500 gap-y-8 gap-x-10">
+              <div class="flex justify-between">
+                <p>定向感</p>
+                <p class="text-blue-700">3 / 4</p>
+              </div>
+              <div class="flex justify-between">
+                <p>語言理解能力</p>
+                <p class="text-blue-700">2 / 3</p>
+              </div>
+              <div class="flex justify-between">
+                <p>執行 / 專注力</p>
+                <p class="text-blue-700">1 / 3</p>
+              </div>
+              <div class="flex justify-between">
+                <p>視覺追蹤能力</p>
+                <p class="text-blue-700">0 / 1</p>
+              </div>
+              <div class="flex justify-between">
+                <p>注意與計算能力</p>
+                <p class="text-blue-700">4 / 5</p>
+              </div>
+              <div class="flex justify-between">
+                <p>延遲記憶力</p>
+                <p class="text-blue-700">4 / 5</p>
+              </div>
+            </div>
+         </div>
+         
+        </div>
+        <!-- 右 --> 
+         <div class="flex flex-col gap-8 p-8 text-2xl text-left">
+          <!-- 測前觀察 -->
+          <div class="text-gray-600">
+            <div class="inline-flex items-center gap-2 mb-4">
+              <i class="fa-regular fa-clipboard"></i>
+              <p>測前觀察</p>
+            </div>
+            <div class="grid grid-cols-3 p-4 text-xl text-white bg-blue-700 rounded-2xl">
+              <!-- 狀態 -->
+               <div>
+                  <p class="mb-4">情緒程度</p>
+                  <span class="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-lg  bg-sky-400 text-white ">
+                    平淡
+                  </span>
+               </div>
+               <!-- 備註 -->
+               <div class="col-span-2">
+                <p class="mb-4">行為表現</p>
+                <div class="w-full space-y-3">
+                  <textarea class="block w-full h-full px-4 py-3 text-sm border-gray-200 rounded-lg focus:border-amber-300 focus:ring-amber-300 disabled:opacity-50 disabled:pointer-events-none placeholder:text-gray-400" rows="6" placeholder="請輸入訊息"></textarea>
+                </div>
+             </div>
+            </div>
+          </div>
+          <!-- 檢後紀錄 -->
+          <div class="text-gray-600">
+            <div class="inline-flex items-center gap-2 mb-4">
+              <i class="fa-regular fa-clipboard"></i>
+              <p>檢後紀錄</p>
+            </div>
+            <div class="grid grid-cols-3 p-4 text-xl text-white bg-blue-700 rounded-2xl">
+              <!-- 狀態 -->
+               <div class="grid gap-6">
+                <div>
+                  <p class="mb-4">參與度</p>
+                  <span class="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-lg  bg-sky-400 text-white ">
+                    偶須鼓勵
+                  </span>
+                </div>
+                <div>
+                  <p class="mb-4">注意力</p>
+                  <span class="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-lg  bg-sky-400 text-white ">
+                    75% - 50%
+                  </span>
+                </div>
+                <div>
+                  <p class="mb-4">指令</p>
+                  <span class="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-lg  bg-sky-400 text-white ">
+                    2 - 3 個指令
+                  </span>
+                </div>
+                <div>
+                  <p class="mb-4">情緒程度</p>
+                  <span class="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-lg  bg-sky-400 text-white ">
+                    平淡
+                  </span>
+                </div>
+               </div>
+               <!-- 備註 -->
+               <div class="grid col-span-2 gap-6">
+                <div>
+                  <p class="mb-4">行為表現</p>
+                  <div class="w-full space-y-3">
+                    <textarea class="block w-full h-full px-4 py-3 text-sm border-gray-200 rounded-lg focus:border-amber-300 focus:ring-amber-300 disabled:opacity-50 disabled:pointer-events-none placeholder:text-gray-400" rows="6" placeholder="請輸入訊息"></textarea>
+                  </div>
+                </div>
+                <div>
+                  <p class="mb-4">補充</p>
+                  <div class="w-full space-y-3">
+                    <textarea class="block w-full h-full px-4 py-3 text-sm border-gray-200 rounded-lg focus:border-amber-300 focus:ring-amber-300 disabled:opacity-50 disabled:pointer-events-none placeholder:text-gray-400" rows="6" placeholder="請輸入訊息"></textarea>
+                  </div>
+                </div>
+             </div>
+            </div>
+          </div>
+         </div>
+      </div>
+    </section>
+  
+    <!-- jQuery main -->
+    <script src="../js/jquery-3.6.3.min.js"></script>
+    <script src="../js/goback.js"></script>
+  
+    <!-- Preline -->
+    <script src="../node_modules/preline/dist/preline.js"></script>
+      
+    <!-- Font awesome -->
+    <script src="https://kit.fontawesome.com/a8b708c9db.js" crossorigin="anonymous"></script>
+  
+    </script>
+  </body>
+</html>
