@@ -7,7 +7,7 @@ function switchTab(nextTab) {
     // Remove active state from all tabs
     document.querySelectorAll('[role="tab"]').forEach((tab) => {
         tab.classList.remove('active');
-        tab.classList.remove('hs-tab-active:bg-white', 'hs-tab-active:text-gray-700');
+        tab.classList.remove('hs-tab-active:bg-white', );
     });
 
     // Show the next tab content
@@ -20,6 +20,14 @@ function switchTab(nextTab) {
     const nextTabButton = document.querySelector(`#segment-item-${nextTab}`);
     if (nextTabButton) {
         nextTabButton.classList.add('active');
-        nextTabButton.classList.add('hs-tab-active:bg-amber-300', 'hs-tab-active:text-gray-700');
+        nextTabButton.classList.add('hs-tab-active:bg-amber-300', 'hs-tab-active:text-gray-900');
     }
 }
+
+// Add click event listeners to each tab button
+document.querySelectorAll('[role="tab"]').forEach((tab) => {
+    tab.addEventListener('click', () => {
+        const targetTab = tab.getAttribute('aria-controls').replace('#segment-', '');
+        switchTab(targetTab);
+    });
+});
