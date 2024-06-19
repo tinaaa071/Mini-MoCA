@@ -6,8 +6,6 @@ document.querySelector('.change-content-button').addEventListener('click', funct
     const newDiv = document.createElement('div');
     newDiv.className = 'new-content-div'; // Add any classes you want
     newDiv.innerHTML = `
-    <div class="max-h-screen flex flex-col justify-start">
-      
       <div class="grid grid-cols-12 gap-6">
         <!-- 左 -->
         <div class="col-span-8 p-8 mb-12 rounded-2xl bg-blue-50">
@@ -47,7 +45,7 @@ document.querySelector('.change-content-button').addEventListener('click', funct
             <p class="text-center text-gray-500 ">篩檢紀錄</p>
           </div>
           <!-- 欄位 -->
-          <div class="flex flex-col overflow-y-scroll text-2xl text-left text-gray-500 max-h-screen ">
+          <div class="flex flex-col overflow-y-scroll text-2xl text-left text-gray-500">
             <!-- 個案 -->
             <a href="篩檢紀錄.html" class="px-2 py-4 border-b-2 border-gray-300 border-dashed rounded-lg hover:bg-amber-300 active:bg-amber-300">
               <div class="flex items-center justify-between mb-4 ">
@@ -130,13 +128,12 @@ document.querySelector('.change-content-button').addEventListener('click', funct
       </div>
       <!-- 按鈕 -->
       <div class="flex justify-center gap-6">
-        <button id="edit" onclick="goBack()" class="px-12 py-5 text-3xl font-bold text-gray-600 bg-white border border-gray-600 rounded-full w-fit">
+        <button id="edit" onclick="edit()" class="px-12 py-5 text-3xl font-bold text-gray-600 bg-white border border-gray-600 rounded-full w-fit">
           編輯個案資訊
         </button>
         <a href="個案測前觀察.html" class="px-12 py-5 text-3xl font-bold text-gray-900 rounded-full bg-amber-300 w-fit">
           下一步
         </a>
-    </div>
     </div>
     `;
     

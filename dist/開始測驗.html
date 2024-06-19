@@ -11,43 +11,45 @@
 
   </head>
   <body>
-    <section class="h-screen overflow-y-hidden text-center ">
-      <!-- Nav -->
-      <nav class="flex justify-between px-6 pt-6 pb-24 align-middle bg-blue-700">
-        <a href="leave.html" class="px-4 py-3 font-bold text-blue-500 bg-gray-200 rounded-full h-fit">
-          <i class="text-4xl transform fa-solid fa-right-from-bracket " style="transform: scaleX(-1);"></i>
-        </a>
+    <section class="h-screen text-center bg-blue-200/75">
+      <div class="h-screen overflow-y-scroll">
+        <!-- Nav -->
+        <nav class="flex justify-between px-6 pt-6 pb-24 align-middle bg-blue-700">
+          <a href="leave.html" class="px-4 py-3 font-bold text-blue-500 bg-gray-200 rounded-full h-fit">
+            <i class="text-4xl transform fa-solid fa-right-from-bracket " style="transform: scaleX(-1);"></i>
+          </a>
 
-      </nav>
-      
-      <!-- 內容 -->
-      <div class="h-full px-40 bg-blue-200/75">
-        <!-- 閱讀 -->
-        <div class="absolute left-0 w-full px-40 top-32">
-          <div class="h-full p-8 pb-48 mb-8 text-2xl font-bold text-center text-gray-900 shadow-md bg-blue-50 rounded-2xl">
-            <h1 class="mb-8 text-4xl text-blue-700">陳笑，您好！</h1>
-            <p class="text-3xl leading-relaxed">
-              接下來，跟著我們一起完成這次約五分鐘的體驗活動。
-            </p>
-          </div>
+        </nav>
+        
+        <!-- 內容 -->
+        <div class="px-40 ">
+          <!-- 閱讀 -->
+          <div class="absolute left-0 w-full px-40 top-32">
+            <div class="h-full p-8 pb-48 mb-8 text-2xl font-bold text-center text-gray-900 shadow-md bg-blue-50 rounded-2xl">
+              <h1 class="mb-8 text-4xl text-blue-700">陳笑，您好！</h1>
+              <p class="text-3xl leading-relaxed">
+                接下來，跟著我們一起完成這次約五分鐘的體驗活動。
+              </p>
+            </div>
 
-          <!-- 按鈕 -->
-          <div class="flex justify-center gap-6">
-            <button onclick="goBack()" class="px-12 py-5 text-3xl font-bold text-gray-600 bg-white border border-gray-600 rounded-full w-fit">
-              上一步
-            </button>
-            <a href="定向(活動說明).html" class="px-12 py-5 text-3xl font-bold text-gray-900 rounded-full bg-amber-300 w-fit">
-              開始體驗
-            </a>
+            <!-- 按鈕 -->
+            <div class="flex justify-center gap-6">
+              <button onclick="goBack()" class="px-12 py-5 text-3xl font-bold text-gray-600 bg-white border border-gray-600 rounded-full w-fit">
+                上一步
+              </button>
+              <a href="定向(活動說明).html" class="px-12 py-5 text-3xl font-bold text-gray-900 rounded-full bg-amber-300 w-fit">
+                開始體驗
+              </a>
+            </div>
+            
           </div>
-          
+        </div>
+        
+        <!-- 圖片 -->
+        <div class="absolute bottom-0 left-3/4 ">
+          <img src="../img/nurse3.png" alt="" class="h-80">
         </div>
       </div>
-      
-      <!-- 圖片 -->
-     <div class="absolute bottom-0 left-3/4 ">
-      <img src="../img/nurse3.png" alt="" class="h-80">
-     </div>
     </section>
   
     <!-- jQuery main -->

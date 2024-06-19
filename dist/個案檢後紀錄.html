@@ -11,120 +11,122 @@
 
   </head>
   <body>
-    <section class="h-screen text-center ">
-      <!-- Nav -->
-      <nav class="flex justify-between px-6 pt-6 pb-24 align-middle bg-blue-700">
-        <a href="leave.html" class="z-10 px-4 py-3 font-bold text-blue-500 bg-gray-200 rounded-full h-fit">
-          <i class="text-4xl transform fa-solid fa-right-from-bracket " style="transform: scaleX(-1);"></i>
-        </a>
-        <h1 class="absolute left-0 right-0 z-0 py-4 mx-auto text-4xl text-center text-white">個案測前觀察</h1>
-        <span></span>
-      </nav>
-      
-      <!-- 內容 -->
-      <div class="h-full px-40 bg-blue-200/75">
-        <!-- 個人資料 -->
-        <div class="absolute left-0 w-full px-40 top-32">
-          <div class="flex justify-between p-8 text-2xl font-bold text-gray-900 shadow-md bg-blue-50 rounded-2xl">
-            <p >朱崙</p>
-            <label for="quantity" class="text-blue-700">18</label>
-            <p >陳笑</p>
-            <p >女</p>
-            <p >87歲</p>
-            <p >高中以上</p>
-          </div>
-        </div>
-        
-        <!-- 選擇 -->
-        <div class="">
-          <div class="flex flex-col gap-6 pt-20 mb-12 text-2xl">
-            <!-- 參與度 -->
-            <div class="flex items-center gap-8">
-              <label for="input-label" class="font-medium whitespace-nowrap">參與度</label>
-              <div class="flex gap-4 text-xl font-semibold">
-                <button type="button" class="inline-flex items-center px-4 py-3 text-white border border-transparent rounded-full bg-sky-500 hover:bg-sky-600 disabled:opacity-50 disabled:pointer-events-none">
-                  主動參與
-                </button>
-                <button type="button" class="inline-flex items-center px-4 py-3 bg-white border-2 rounded-full text-sky-500 border-sky-500 hover:bg-sky-500 disabled:opacity-50 disabled:pointer-events-none hover:text-white">
-                  偶須鼓勵
-                </button>
-                <button type="button" class="inline-flex items-center px-4 py-3 bg-white border-2 rounded-full text-sky-500 border-sky-500 hover:bg-sky-500 disabled:opacity-50 disabled:pointer-events-none hover:text-white">
-                  多次鼓勵
-                </button>
-                <button type="button" class="inline-flex items-center px-4 py-3 bg-white border-2 rounded-full text-sky-500 border-sky-500 hover:bg-sky-500 disabled:opacity-50 disabled:pointer-events-none hover:text-white">
-                  不參與
-                </button>
-              </div>
-            </div>
-            <!-- 注意力 -->
-            <div class="flex items-center gap-8">
-              <label for="input-label" class="font-medium whitespace-nowrap">注意力</label>
-              <div class="flex gap-4 text-xl font-semibold">
-                <button type="button" class="inline-flex items-center px-4 py-3 text-white border border-transparent rounded-full bg-sky-500 hover:bg-sky-600 disabled:opacity-50 disabled:pointer-events-none">
-                  > 75%
-                </button>
-                <button type="button" class="inline-flex items-center px-4 py-3 bg-white border-2 rounded-full text-sky-500 border-sky-500 hover:bg-sky-500 disabled:opacity-50 disabled:pointer-events-none hover:text-white">
-                  75% - 50%
-                </button>
-                <button type="button" class="inline-flex items-center px-4 py-3 bg-white border-2 rounded-full text-sky-500 border-sky-500 hover:bg-sky-500 disabled:opacity-50 disabled:pointer-events-none hover:text-white">
-                  50% - 10%
-                </button>
-                <button type="button" class="inline-flex items-center px-4 py-3 bg-white border-2 rounded-full text-sky-500 border-sky-500 hover:bg-sky-500 disabled:opacity-50 disabled:pointer-events-none hover:text-white">
-                  < 10%
-                </button>
-              </div>
-            </div>
-            <!-- 指令 -->
-            <div class="flex items-center gap-8">
-              <label for="input-label" class="font-medium whitespace-nowrap">指令</label>
-              <div class="flex gap-4 text-xl font-semibold">
-                <button type="button" class="inline-flex items-center px-4 py-3 text-white border border-transparent rounded-full bg-sky-500 hover:bg-sky-600 disabled:opacity-50 disabled:pointer-events-none">
-                  沒有困難
-                </button>
-                <button type="button" class="inline-flex items-center px-4 py-3 bg-white border-2 rounded-full text-sky-500 border-sky-500 hover:bg-sky-500 disabled:opacity-50 disabled:pointer-events-none hover:text-white">
-                  2 - 3 個指令
-                </button>
-                <button type="button" class="inline-flex items-center px-4 py-3 bg-white border-2 rounded-full text-sky-500 border-sky-500 hover:bg-sky-500 disabled:opacity-50 disabled:pointer-events-none hover:text-white">
-                  單一指令
-                </button>
-                <button type="button" class="inline-flex items-center px-4 py-3 bg-white border-2 rounded-full text-sky-500 border-sky-500 hover:bg-sky-500 disabled:opacity-50 disabled:pointer-events-none hover:text-white">
-                  無法執行
-                </button>
-              </div>
-            </div>
-            <!-- 情緒程度 -->
-            <div class="flex items-center gap-8">
-              <label for="input-label" class="font-medium whitespace-nowrap">情緒程度</label>
-              <div class="flex gap-4 text-xl font-semibold">
-                <button type="button" class="inline-flex items-center px-4 py-3 text-white border border-transparent rounded-full bg-sky-500 hover:bg-sky-600 disabled:opacity-50 disabled:pointer-events-none">
-                  多正向
-                </button>
-                <button type="button" class="inline-flex items-center px-4 py-3 bg-white border-2 rounded-full text-sky-500 border-sky-500 hover:bg-sky-500 disabled:opacity-50 disabled:pointer-events-none hover:text-white">
-                  平淡
-                </button>
-                <button type="button" class="inline-flex items-center px-4 py-3 bg-white border-2 rounded-full text-sky-500 border-sky-500 hover:bg-sky-500 disabled:opacity-50 disabled:pointer-events-none hover:text-white">
-                  多負向
-                </button>
-                <button type="button" class="inline-flex items-center px-4 py-3 bg-white border-2 rounded-full text-sky-500 border-sky-500 hover:bg-sky-500 disabled:opacity-50 disabled:pointer-events-none hover:text-white">
-                  無法控制
-                </button>
-                <button type="button" class="inline-flex items-center px-4 py-3 bg-white border-2 rounded-full text-sky-500 border-sky-500 hover:bg-sky-500 disabled:opacity-50 disabled:pointer-events-none hover:text-white">
-                  非常不高興
-                </button>
-              </div>
-            </div>
-            <!-- 備註 -->
-            <div class="flex items-center gap-8">
-              <label for="input-label" class="font-medium whitespace-nowrap">備註</label>
-              <input type="text" id="input-label" class="block w-full px-4 py-3 text-lg border-gray-200 rounded-lg focus:border-amber-300 focus:ring-amber-300 disabled:opacity-50 disabled:pointer-events-none " placeholder="">
-            </div>
-          </div>
-
-          <!-- 按鈕 -->
-          <a href="新個案初檢.html" class="px-12 py-5 text-3xl font-bold text-gray-900 rounded-full bg-amber-300 w-fit">
-            完成！
+    <section class="h-screen text-center bg-blue-200/75">
+      <div class="relative h-screen overflow-y-scroll">
+        <!-- Nav -->
+        <nav class="flex justify-between px-6 pt-6 pb-24 align-middle bg-blue-700">
+          <a href="leave.html" class="z-10 px-4 py-3 font-bold text-blue-500 bg-gray-200 rounded-full h-fit">
+            <i class="text-4xl transform fa-solid fa-right-from-bracket " style="transform: scaleX(-1);"></i>
           </a>
-        </div> 
+          <h1 class="absolute left-0 right-0 z-0 py-4 mx-auto text-4xl text-center text-white">個案檢後紀錄</h1>
+          <span></span>
+        </nav>
+        
+        <!-- 內容 -->
+        <div class="px-40">
+          <!-- 個人資料 -->
+          <div class="absolute left-0 w-full px-40 top-32">
+            <div class="flex justify-between p-8 text-2xl font-bold text-gray-900 shadow-md bg-blue-50 rounded-2xl">
+              <p >朱崙</p>
+              <label for="quantity" class="text-blue-700">18</label>
+              <p >陳笑</p>
+              <p >女</p>
+              <p >87歲</p>
+              <p >高中以上</p>
+            </div>
+          </div>
+          
+          <!-- 選擇 -->
+          <div class="">
+            <div class="flex flex-col gap-6 pt-20 mb-12 text-2xl">
+              <!-- 參與度 -->
+              <div class="flex items-center gap-8">
+                <label for="input-label" class="font-medium whitespace-nowrap">參與度</label>
+                <div class="flex gap-4 text-xl font-semibold">
+                  <button type="button" class="inline-flex items-center px-4 py-3 text-white border border-transparent rounded-full bg-sky-500 hover:bg-sky-600 disabled:opacity-50 disabled:pointer-events-none">
+                    主動參與
+                  </button>
+                  <button type="button" class="inline-flex items-center px-4 py-3 bg-white border-2 rounded-full text-sky-500 border-sky-500 hover:bg-sky-500 disabled:opacity-50 disabled:pointer-events-none hover:text-white">
+                    偶須鼓勵
+                  </button>
+                  <button type="button" class="inline-flex items-center px-4 py-3 bg-white border-2 rounded-full text-sky-500 border-sky-500 hover:bg-sky-500 disabled:opacity-50 disabled:pointer-events-none hover:text-white">
+                    多次鼓勵
+                  </button>
+                  <button type="button" class="inline-flex items-center px-4 py-3 bg-white border-2 rounded-full text-sky-500 border-sky-500 hover:bg-sky-500 disabled:opacity-50 disabled:pointer-events-none hover:text-white">
+                    不參與
+                  </button>
+                </div>
+              </div>
+              <!-- 注意力 -->
+              <div class="flex items-center gap-8">
+                <label for="input-label" class="font-medium whitespace-nowrap">注意力</label>
+                <div class="flex gap-4 text-xl font-semibold">
+                  <button type="button" class="inline-flex items-center px-4 py-3 text-white border border-transparent rounded-full bg-sky-500 hover:bg-sky-600 disabled:opacity-50 disabled:pointer-events-none">
+                    > 75%
+                  </button>
+                  <button type="button" class="inline-flex items-center px-4 py-3 bg-white border-2 rounded-full text-sky-500 border-sky-500 hover:bg-sky-500 disabled:opacity-50 disabled:pointer-events-none hover:text-white">
+                    75% - 50%
+                  </button>
+                  <button type="button" class="inline-flex items-center px-4 py-3 bg-white border-2 rounded-full text-sky-500 border-sky-500 hover:bg-sky-500 disabled:opacity-50 disabled:pointer-events-none hover:text-white">
+                    50% - 10%
+                  </button>
+                  <button type="button" class="inline-flex items-center px-4 py-3 bg-white border-2 rounded-full text-sky-500 border-sky-500 hover:bg-sky-500 disabled:opacity-50 disabled:pointer-events-none hover:text-white">
+                    < 10%
+                  </button>
+                </div>
+              </div>
+              <!-- 指令 -->
+              <div class="flex items-center gap-8">
+                <label for="input-label" class="font-medium whitespace-nowrap">指令</label>
+                <div class="flex gap-4 text-xl font-semibold">
+                  <button type="button" class="inline-flex items-center px-4 py-3 text-white border border-transparent rounded-full bg-sky-500 hover:bg-sky-600 disabled:opacity-50 disabled:pointer-events-none">
+                    沒有困難
+                  </button>
+                  <button type="button" class="inline-flex items-center px-4 py-3 bg-white border-2 rounded-full text-sky-500 border-sky-500 hover:bg-sky-500 disabled:opacity-50 disabled:pointer-events-none hover:text-white">
+                    2 - 3 個指令
+                  </button>
+                  <button type="button" class="inline-flex items-center px-4 py-3 bg-white border-2 rounded-full text-sky-500 border-sky-500 hover:bg-sky-500 disabled:opacity-50 disabled:pointer-events-none hover:text-white">
+                    單一指令
+                  </button>
+                  <button type="button" class="inline-flex items-center px-4 py-3 bg-white border-2 rounded-full text-sky-500 border-sky-500 hover:bg-sky-500 disabled:opacity-50 disabled:pointer-events-none hover:text-white">
+                    無法執行
+                  </button>
+                </div>
+              </div>
+              <!-- 情緒程度 -->
+              <div class="flex items-center gap-8">
+                <label for="input-label" class="font-medium whitespace-nowrap">情緒程度</label>
+                <div class="flex gap-4 text-xl font-semibold">
+                  <button type="button" class="inline-flex items-center px-4 py-3 text-white border border-transparent rounded-full bg-sky-500 hover:bg-sky-600 disabled:opacity-50 disabled:pointer-events-none">
+                    多正向
+                  </button>
+                  <button type="button" class="inline-flex items-center px-4 py-3 bg-white border-2 rounded-full text-sky-500 border-sky-500 hover:bg-sky-500 disabled:opacity-50 disabled:pointer-events-none hover:text-white">
+                    平淡
+                  </button>
+                  <button type="button" class="inline-flex items-center px-4 py-3 bg-white border-2 rounded-full text-sky-500 border-sky-500 hover:bg-sky-500 disabled:opacity-50 disabled:pointer-events-none hover:text-white">
+                    多負向
+                  </button>
+                  <button type="button" class="inline-flex items-center px-4 py-3 bg-white border-2 rounded-full text-sky-500 border-sky-500 hover:bg-sky-500 disabled:opacity-50 disabled:pointer-events-none hover:text-white">
+                    無法控制
+                  </button>
+                  <button type="button" class="inline-flex items-center px-4 py-3 bg-white border-2 rounded-full text-sky-500 border-sky-500 hover:bg-sky-500 disabled:opacity-50 disabled:pointer-events-none hover:text-white">
+                    非常不高興
+                  </button>
+                </div>
+              </div>
+              <!-- 備註 -->
+              <div class="flex items-center gap-8">
+                <label for="input-label" class="font-medium whitespace-nowrap">備註</label>
+                <input type="text" id="input-label" class="block w-full px-4 py-3 text-lg border-gray-200 rounded-lg focus:border-amber-300 focus:ring-amber-300 disabled:opacity-50 disabled:pointer-events-none " placeholder="">
+              </div>
+            </div>
+
+            <!-- 按鈕 -->
+            <a href="新個案初檢.html" class="px-12 py-5 text-3xl font-bold text-gray-900 rounded-full bg-amber-300 w-fit">
+              完成！
+            </a>
+          </div> 
+        </div>
       </div>
     </section>
   
