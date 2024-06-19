@@ -1649,6 +1649,18 @@ input:checked + .toggle-bg{
   width: 100%;
 }
 
+.w-1\/10{
+  width: 10%;
+}
+
+.w-1\/6{
+  width: 16.666667%;
+}
+
+.w-1\/12{
+  width: 8.333333%;
+}
+
 .max-w-5xl{
   max-width: 64rem;
 }
@@ -1813,6 +1825,10 @@ input:checked + .toggle-bg{
 
 .gap-8{
   gap: 2rem;
+}
+
+.gap-12{
+  gap: 3rem;
 }
 
 .gap-x-1{
