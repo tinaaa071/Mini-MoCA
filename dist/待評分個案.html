@@ -11,734 +11,236 @@
 
   </head>
   <body>
-    <section class="grid h-screen grid-cols-12 overflow-y-scroll text-center bg-gray-50">
-      <!-- 左 -->
-      <div class="flex flex-col col-span-3 p-6 bg-blue-700 rounded-r-[80px] shadow-lg text-4xl max-h-screen ">
-        <!-- nav -->
-        <div class="flex items-center mb-6 whitespace-nowrap gap-x-6">
-          <button onclick="goBack()" class="px-4 py-3 font-bold text-blue-500 bg-gray-200 rounded-full h-fit w-fit">
-            <i class="text-4xl transform fa-solid fa-xmark"></i>
-          </button>
-          <h1 class="py-4 text-center text-white">
-            待評分個案
-          </h1>
-        </div>
-        <!-- 個案 -->
-        <div class="max-h-screen p-4 overflow-y-scroll rounded-xl bg-blue-50">
-          <!-- 下拉 -->
-          <select class="block w-full px-4 py-3 mb-2 text-xl border-gray-200 rounded-lg pe-9 focus:border-amber-300 focus:ring-amber-300 disabled:opacity-50 disabled:pointer-events-none">
-            <option selected="">全部</option>
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-          </select>
-          <!-- 欄位 -->
-          <div class="flex flex-col text-2xl text-left text-gray-500">
-            <!-- 個案 -->
-            <button type="button" class="px-2 py-4 text-left border-b-2 border-gray-300 border-dashed rounded-lg hover:bg-amber-300 active:bg-amber-300 active-tab-button">
-              <div class="flex items-center justify-between mb-4 ">
-                <label for="input-label" class="font-medium text-gray-900 whitespace-nowrap ">
-                  陳小美
-                </label>
-                <p class="text-blue-600 ">
-                  17 分
-                </p>
-              </div>
-              <p class="text-lg">
-                測驗時間：
-                <time datetime="2024-07-02 T17:25">2024/07/02 17:25
-                </time>
-              </p>
-              <p class="text-lg">
-                花費時間：
-                <time>04:49:12</time>
-              </p>
+    <section class="h-screen text-center bg-gray-50">
+      <div class="grid h-screen grid-cols-12 overflow-y-scroll">
+        <!-- 左 -->
+        <div class="flex flex-col col-span-3 p-6 bg-blue-700 rounded-r-[80px] shadow-lg text-4xl max-h-screen ">
+          <!-- nav -->
+          <div class="flex items-center mb-6 whitespace-nowrap gap-x-6">
+            <button onclick="goBack()" class="px-4 py-3 font-bold text-blue-500 bg-gray-200 rounded-full h-fit w-fit">
+              <i class="text-4xl transform fa-solid fa-xmark"></i>
             </button>
-            <button type="button" class="px-2 py-4 text-left border-b-2 border-gray-300 border-dashed rounded-lg hover:bg-amber-300 active:bg-amber-300 active-tab-button">
-              <div class="flex items-center justify-between mb-4 ">
-                <label for="input-label" class="font-medium text-gray-900 whitespace-nowrap ">
-                  陳小美
-                </label>
-                <p class="text-blue-600 ">
-                  17 分
+            <h1 class="py-4 text-center text-white">
+              待評分個案
+            </h1>
+          </div>
+          <!-- 個案 -->
+          <div class="max-h-screen p-4 overflow-y-scroll rounded-xl bg-blue-50">
+            <!-- 下拉 -->
+            <select class="block w-full px-4 py-3 mb-2 text-xl border-gray-200 rounded-lg pe-9 focus:border-amber-300 focus:ring-amber-300 disabled:opacity-50 disabled:pointer-events-none">
+              <option selected="">全部</option>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+            </select>
+            <!-- 欄位 -->
+            <div class="flex flex-col text-2xl text-left text-gray-500">
+              <!-- 個案 -->
+              <button type="button" class="px-2 py-4 text-left border-b-2 border-gray-300 border-dashed rounded-lg hover:bg-amber-300 active:bg-amber-300 active-tab-button">
+                <div class="flex items-center justify-between mb-4 ">
+                  <label for="input-label" class="font-medium text-gray-900 whitespace-nowrap ">
+                    陳小美
+                  </label>
+                  <p class="text-blue-600 ">
+                    17 分
+                  </p>
+                </div>
+                <p class="text-lg">
+                  測驗時間：
+                  <time datetime="2024-07-02 T17:25">2024/07/02 17:25
+                  </time>
                 </p>
-              </div>
-              <p class="text-lg">
-                測驗時間：
-                <time datetime="2024-07-02 T17:25">2024/07/02 17:25
-                </time>
-              </p>
-              <p class="text-lg">
-                花費時間：
-                <time>04:49:12</time>
-              </p>
-            </button>
-            <button type="button" class="px-2 py-4 text-left border-b-2 border-gray-300 border-dashed rounded-lg hover:bg-amber-300 active:bg-amber-300 active-tab-button">
-              <div class="flex items-center justify-between mb-4 ">
-                <label for="input-label" class="font-medium text-gray-900 whitespace-nowrap ">
-                  陳小美
-                </label>
-                <p class="text-blue-600 ">
-                  17 分
+                <p class="text-lg">
+                  花費時間：
+                  <time>04:49:12</time>
                 </p>
-              </div>
-              <p class="text-lg">
-                測驗時間：
-                <time datetime="2024-07-02 T17:25">2024/07/02 17:25
-                </time>
-              </p>
-              <p class="text-lg">
-                花費時間：
-                <time>04:49:12</time>
-              </p>
-            </button>
-            <button type="button" class="px-2 py-4 text-left border-b-2 border-gray-300 border-dashed rounded-lg hover:bg-amber-300 active:bg-amber-300 active-tab-button">
-              <div class="flex items-center justify-between mb-4 ">
-                <label for="input-label" class="font-medium text-gray-900 whitespace-nowrap ">
-                  陳小美
-                </label>
-                <p class="text-blue-600 ">
-                  17 分
+              </button>
+              <button type="button" class="px-2 py-4 text-left border-b-2 border-gray-300 border-dashed rounded-lg hover:bg-amber-300 active:bg-amber-300 active-tab-button">
+                <div class="flex items-center justify-between mb-4 ">
+                  <label for="input-label" class="font-medium text-gray-900 whitespace-nowrap ">
+                    陳小美
+                  </label>
+                  <p class="text-blue-600 ">
+                    17 分
+                  </p>
+                </div>
+                <p class="text-lg">
+                  測驗時間：
+                  <time datetime="2024-07-02 T17:25">2024/07/02 17:25
+                  </time>
                 </p>
-              </div>
-              <p class="text-lg">
-                測驗時間：
-                <time datetime="2024-07-02 T17:25">2024/07/02 17:25
-                </time>
-              </p>
-              <p class="text-lg">
-                花費時間：
-                <time>04:49:12</time>
-              </p>
-            </button>
-            <button type="button" class="px-2 py-4 text-left border-b-2 border-gray-300 border-dashed rounded-lg hover:bg-amber-300 active:bg-amber-300 active-tab-button">
-              <div class="flex items-center justify-between mb-4 ">
-                <label for="input-label" class="font-medium text-gray-900 whitespace-nowrap ">
-                  陳小美
-                </label>
-                <p class="text-blue-600 ">
-                  17 分
+                <p class="text-lg">
+                  花費時間：
+                  <time>04:49:12</time>
                 </p>
-              </div>
-              <p class="text-lg">
-                測驗時間：
-                <time datetime="2024-07-02 T17:25">2024/07/02 17:25
-                </time>
-              </p>
-              <p class="text-lg">
-                花費時間：
-                <time>04:49:12</time>
-              </p>
-            </button>
-            <button type="button" class="px-2 py-4 text-left border-b-2 border-gray-300 border-dashed rounded-lg hover:bg-amber-300 active:bg-amber-300 active-tab-button">
-              <div class="flex items-center justify-between mb-4 ">
-                <label for="input-label" class="font-medium text-gray-900 whitespace-nowrap ">
-                  陳小美
-                </label>
-                <p class="text-blue-600 ">
-                  17 分
+              </button>
+              <button type="button" class="px-2 py-4 text-left border-b-2 border-gray-300 border-dashed rounded-lg hover:bg-amber-300 active:bg-amber-300 active-tab-button">
+                <div class="flex items-center justify-between mb-4 ">
+                  <label for="input-label" class="font-medium text-gray-900 whitespace-nowrap ">
+                    陳小美
+                  </label>
+                  <p class="text-blue-600 ">
+                    17 分
+                  </p>
+                </div>
+                <p class="text-lg">
+                  測驗時間：
+                  <time datetime="2024-07-02 T17:25">2024/07/02 17:25
+                  </time>
                 </p>
-              </div>
-              <p class="text-lg">
-                測驗時間：
-                <time datetime="2024-07-02 T17:25">2024/07/02 17:25
-                </time>
-              </p>
-              <p class="text-lg">
-                花費時間：
-                <time>04:49:12</time>
-              </p>
-            </button>
-            <button type="button" class="px-2 py-4 text-left border-b-2 border-gray-300 border-dashed rounded-lg hover:bg-amber-300 active:bg-amber-300 active-tab-button">
-              <div class="flex items-center justify-between mb-4 ">
-                <label for="input-label" class="font-medium text-gray-900 whitespace-nowrap ">
-                  陳小美
-                </label>
-                <p class="text-blue-600 ">
-                  17 分
+                <p class="text-lg">
+                  花費時間：
+                  <time>04:49:12</time>
                 </p>
-              </div>
-              <p class="text-lg">
-                測驗時間：
-                <time datetime="2024-07-02 T17:25">2024/07/02 17:25
-                </time>
-              </p>
-              <p class="text-lg">
-                花費時間：
-                <time>04:49:12</time>
-              </p>
-            </button>
+              </button>
+              <button type="button" class="px-2 py-4 text-left border-b-2 border-gray-300 border-dashed rounded-lg hover:bg-amber-300 active:bg-amber-300 active-tab-button">
+                <div class="flex items-center justify-between mb-4 ">
+                  <label for="input-label" class="font-medium text-gray-900 whitespace-nowrap ">
+                    陳小美
+                  </label>
+                  <p class="text-blue-600 ">
+                    17 分
+                  </p>
+                </div>
+                <p class="text-lg">
+                  測驗時間：
+                  <time datetime="2024-07-02 T17:25">2024/07/02 17:25
+                  </time>
+                </p>
+                <p class="text-lg">
+                  花費時間：
+                  <time>04:49:12</time>
+                </p>
+              </button>
+              <button type="button" class="px-2 py-4 text-left border-b-2 border-gray-300 border-dashed rounded-lg hover:bg-amber-300 active:bg-amber-300 active-tab-button">
+                <div class="flex items-center justify-between mb-4 ">
+                  <label for="input-label" class="font-medium text-gray-900 whitespace-nowrap ">
+                    陳小美
+                  </label>
+                  <p class="text-blue-600 ">
+                    17 分
+                  </p>
+                </div>
+                <p class="text-lg">
+                  測驗時間：
+                  <time datetime="2024-07-02 T17:25">2024/07/02 17:25
+                  </time>
+                </p>
+                <p class="text-lg">
+                  花費時間：
+                  <time>04:49:12</time>
+                </p>
+              </button>
+              <button type="button" class="px-2 py-4 text-left border-b-2 border-gray-300 border-dashed rounded-lg hover:bg-amber-300 active:bg-amber-300 active-tab-button">
+                <div class="flex items-center justify-between mb-4 ">
+                  <label for="input-label" class="font-medium text-gray-900 whitespace-nowrap ">
+                    陳小美
+                  </label>
+                  <p class="text-blue-600 ">
+                    17 分
+                  </p>
+                </div>
+                <p class="text-lg">
+                  測驗時間：
+                  <time datetime="2024-07-02 T17:25">2024/07/02 17:25
+                  </time>
+                </p>
+                <p class="text-lg">
+                  花費時間：
+                  <time>04:49:12</time>
+                </p>
+              </button>
+              <button type="button" class="px-2 py-4 text-left border-b-2 border-gray-300 border-dashed rounded-lg hover:bg-amber-300 active:bg-amber-300 active-tab-button">
+                <div class="flex items-center justify-between mb-4 ">
+                  <label for="input-label" class="font-medium text-gray-900 whitespace-nowrap ">
+                    陳小美
+                  </label>
+                  <p class="text-blue-600 ">
+                    17 分
+                  </p>
+                </div>
+                <p class="text-lg">
+                  測驗時間：
+                  <time datetime="2024-07-02 T17:25">2024/07/02 17:25
+                  </time>
+                </p>
+                <p class="text-lg">
+                  花費時間：
+                  <time>04:49:12</time>
+                </p>
+              </button>
+            </div>
           </div>
         </div>
-      </div>
 
-      <!-- 右 -->
-      <div class="max-h-screen col-span-9 p-6 overflow-y-scroll">
-        <!-- nav -->
-        <div class="flex items-center mb-6 whitespace-nowrap">
-          <div></div>
-          <div id="name">
-            <p class="py-4 space-x-2 text-4xl text-center text-gray-900">
-              <span>陳小美</span> / 
-              <span>女</span> / 
-              <span>89 歲</span> / 
-              <span>高中以上</span>
-            </p>
+        <!-- 右 -->
+        <div class="max-h-screen col-span-9 p-6 overflow-y-scroll">
+          <!-- nav -->
+          <div class="flex items-center mb-6 whitespace-nowrap">
+            <div></div>
+            <div id="name">
+              <p class="py-4 space-x-2 text-4xl text-center text-gray-900">
+                <span>陳小美</span> / 
+                <span>女</span> / 
+                <span>89 歲</span> / 
+                <span>高中以上</span>
+              </p>
+            </div>
           </div>
-        </div>
-        <!-- Tab -->
-        <div class="flex w-full mb-6">
-          <div class="flex w-full p-2 text-lg transition bg-gray-100 rounded-lg">
-            <nav class="flex w-full space-x-1" aria-label="Tabs" role="tablist">
-              <button type="button" class="inline-flex items-center justify-center w-full px-4 py-3 font-medium text-gray-500 bg-transparent rounded-lg hs-tab-active:bg-amber-300 hs-tab-active:text-gray-900 hs-tab-active:font-semibold gap-x-2 hover:text-gray-700 hover:hover:text-blue-600 disabled:opacity-50 disabled:pointer-events-none active" id="segment-item-1" data-hs-tab="#segment-1" aria-controls="segment-1" role="tab">
-                主觀評估
-              </button>
-              <button type="button" class="inline-flex items-center justify-center w-full px-4 py-3 font-medium text-gray-500 bg-transparent rounded-lg hs-tab-active:bg-amber-300 hs-tab-active:text-gray-700 gap-x-2 hover:text-gray-700 hover:hover:text-blue-600 disabled:opacity-50 disabled:pointer-events-none " id="segment-item-2" data-hs-tab="#segment-2" aria-controls="segment-2" role="tab">
-                定向感
-              </button>
-              <button type="button" class="inline-flex items-center justify-center w-full px-4 py-3 font-medium text-gray-500 bg-transparent rounded-lg hs-tab-active:bg-amber-300 hs-tab-active:text-gray-700 gap-x-2 hover:text-gray-700 hover:hover:text-blue-600 disabled:opacity-50 disabled:pointer-events-none " id="segment-item-3" data-hs-tab="#segment-3" aria-controls="segment-3" role="tab">
-                執行 / 專注
-              </button>
-              <button type="button" class="inline-flex items-center justify-center w-full px-4 py-3 font-medium text-gray-500 bg-transparent rounded-lg hs-tab-active:bg-amber-300 hs-tab-active:text-gray-700 gap-x-2 hover:text-gray-700 hover:hover:text-blue-600 disabled:opacity-50 disabled:pointer-events-none " id="segment-item-4" data-hs-tab="#segment-4" aria-controls="segment-4" role="tab">
-                專注 / 計算
-              </button>
-              <button type="button" class="inline-flex items-center justify-center w-full px-4 py-3 font-medium text-gray-500 bg-transparent rounded-lg hs-tab-active:bg-amber-300 hs-tab-active:text-gray-700 gap-x-2 hover:text-gray-700 hover:hover:text-blue-600 disabled:opacity-50 disabled:pointer-events-none " id="segment-item-5" data-hs-tab="#segment-5" aria-controls="segment-5" role="tab">
-                視覺追蹤
-              </button>
-              <button type="button" class="inline-flex items-center justify-center w-full px-4 py-3 font-medium text-gray-500 bg-transparent rounded-lg hs-tab-active:bg-amber-300 hs-tab-active:text-gray-700 gap-x-2 hover:text-gray-700 hover:hover:text-blue-600 disabled:opacity-50 disabled:pointer-events-none " id="segment-item-6" data-hs-tab="#segment-6" aria-controls="segment-6" role="tab">
-                語言記憶
-              </button>
-              <button type="button" class="inline-flex items-center justify-center w-full px-4 py-3 font-medium text-gray-500 bg-transparent rounded-lg hs-tab-active:bg-amber-300 hs-tab-active:text-gray-700 gap-x-2 hover:text-gray-700 hover:hover:text-blue-600 disabled:opacity-50 disabled:pointer-events-none " id="segment-item-7" data-hs-tab="#segment-7" aria-controls="segment-7" role="tab">
-                結算
-              </button>
-            </nav>
+          <!-- Tab -->
+          <div class="flex w-full mb-6">
+            <div class="flex w-full p-2 text-lg transition bg-gray-100 rounded-lg">
+              <nav class="flex w-full space-x-1" aria-label="Tabs" role="tablist">
+                <button type="button" class="inline-flex items-center justify-center w-full px-4 py-3 font-medium text-gray-500 bg-transparent rounded-lg hs-tab-active:bg-amber-300 hs-tab-active:text-gray-900 hs-tab-active:font-semibold gap-x-2 hover:text-gray-700 hover:hover:text-blue-600 disabled:opacity-50 disabled:pointer-events-none active" id="segment-item-1" data-hs-tab="#segment-1" aria-controls="segment-1" role="tab">
+                  主觀評估
+                </button>
+                <button type="button" class="inline-flex items-center justify-center w-full px-4 py-3 font-medium text-gray-500 bg-transparent rounded-lg hs-tab-active:bg-amber-300 hs-tab-active:text-gray-700 gap-x-2 hover:text-gray-700 hover:hover:text-blue-600 disabled:opacity-50 disabled:pointer-events-none " id="segment-item-2" data-hs-tab="#segment-2" aria-controls="segment-2" role="tab">
+                  定向感
+                </button>
+                <button type="button" class="inline-flex items-center justify-center w-full px-4 py-3 font-medium text-gray-500 bg-transparent rounded-lg hs-tab-active:bg-amber-300 hs-tab-active:text-gray-700 gap-x-2 hover:text-gray-700 hover:hover:text-blue-600 disabled:opacity-50 disabled:pointer-events-none " id="segment-item-3" data-hs-tab="#segment-3" aria-controls="segment-3" role="tab">
+                  執行 / 專注
+                </button>
+                <button type="button" class="inline-flex items-center justify-center w-full px-4 py-3 font-medium text-gray-500 bg-transparent rounded-lg hs-tab-active:bg-amber-300 hs-tab-active:text-gray-700 gap-x-2 hover:text-gray-700 hover:hover:text-blue-600 disabled:opacity-50 disabled:pointer-events-none " id="segment-item-4" data-hs-tab="#segment-4" aria-controls="segment-4" role="tab">
+                  專注 / 計算
+                </button>
+                <button type="button" class="inline-flex items-center justify-center w-full px-4 py-3 font-medium text-gray-500 bg-transparent rounded-lg hs-tab-active:bg-amber-300 hs-tab-active:text-gray-700 gap-x-2 hover:text-gray-700 hover:hover:text-blue-600 disabled:opacity-50 disabled:pointer-events-none " id="segment-item-5" data-hs-tab="#segment-5" aria-controls="segment-5" role="tab">
+                  視覺追蹤
+                </button>
+                <button type="button" class="inline-flex items-center justify-center w-full px-4 py-3 font-medium text-gray-500 bg-transparent rounded-lg hs-tab-active:bg-amber-300 hs-tab-active:text-gray-700 gap-x-2 hover:text-gray-700 hover:hover:text-blue-600 disabled:opacity-50 disabled:pointer-events-none " id="segment-item-6" data-hs-tab="#segment-6" aria-controls="segment-6" role="tab">
+                  語言記憶
+                </button>
+                <button type="button" class="inline-flex items-center justify-center w-full px-4 py-3 font-medium text-gray-500 bg-transparent rounded-lg hs-tab-active:bg-amber-300 hs-tab-active:text-gray-700 gap-x-2 hover:text-gray-700 hover:hover:text-blue-600 disabled:opacity-50 disabled:pointer-events-none " id="segment-item-7" data-hs-tab="#segment-7" aria-controls="segment-7" role="tab">
+                  結算
+                </button>
+              </nav>
+            </div>
           </div>
-        </div>
-        
-        <div class="mt-3">
-          <!-- 主觀評估 -->
-          <div id="segment-1" role="tabpanel" aria-labelledby="segment-item-1">
-            <div class="flex flex-col gap-8 text-2xl text-left">
-              <!-- 測前觀察 -->
-              <div class="text-gray-600">
-                <div class="inline-flex items-center gap-2 mb-4">
-                  <i class="fa-regular fa-clipboard"></i>
-                  <p>測前觀察</p>
-                </div>
-                <div class="grid grid-cols-3 p-4 text-xl text-white bg-blue-700 rounded-2xl">
-                  <!-- 狀態 -->
-                   <div>
-                      <p class="mb-4">情緒程度</p>
-                      <span class="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-lg  bg-sky-400 text-white ">
-                        平淡
-                      </span>
-                   </div>
-                   <!-- 備註 -->
-                   <div class="col-span-2">
-                    <p class="mb-4">行為表現</p>
-                    <div class="w-full space-y-3">
-                      <textarea class="block w-full h-full px-4 py-3 text-sm border-gray-200 rounded-lg focus:border-amber-300 focus:ring-amber-300 disabled:opacity-50 disabled:pointer-events-none placeholder:text-gray-400" rows="6" placeholder="請輸入訊息"></textarea>
-                    </div>
-                 </div>
-                </div>
-              </div>
-              <!-- 檢後紀錄 -->
-              <div class="text-gray-600">
-                <div class="inline-flex items-center gap-2 mb-4">
-                  <i class="fa-regular fa-clipboard"></i>
-                  <p>檢後紀錄</p>
-                </div>
-                <div class="grid grid-cols-3 p-4 text-xl text-white bg-blue-700 rounded-2xl">
-                  <!-- 狀態 -->
-                   <div class="grid gap-6">
+          
+          <div class="mt-3">
+            <!-- 主觀評估 -->
+            <div id="segment-1" role="tabpanel" aria-labelledby="segment-item-1">
+              <div class="flex flex-col gap-8 text-2xl text-left">
+                <!-- 測前觀察 -->
+                <div class="text-gray-600">
+                  <div class="inline-flex items-center gap-2 mb-4">
+                    <i class="fa-regular fa-clipboard"></i>
+                    <p>測前觀察</p>
+                  </div>
+                  <div class="grid grid-cols-3 p-4 text-xl text-white bg-blue-700 rounded-2xl">
+                    <!-- 狀態 -->
                     <div>
-                      <p class="mb-4">參與度</p>
-                      <span class="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-lg  bg-sky-400 text-white ">
-                        偶須鼓勵
-                      </span>
+                        <p class="mb-4">情緒程度</p>
+                        <span class="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-lg  bg-sky-400 text-white ">
+                          平淡
+                        </span>
                     </div>
-                    <div>
-                      <p class="mb-4">注意力</p>
-                      <span class="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-lg  bg-sky-400 text-white ">
-                        75% - 50%
-                      </span>
-                    </div>
-                    <div>
-                      <p class="mb-4">指令</p>
-                      <span class="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-lg  bg-sky-400 text-white ">
-                        2 - 3 個指令
-                      </span>
-                    </div>
-                    <div>
-                      <p class="mb-4">情緒程度</p>
-                      <span class="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-lg  bg-sky-400 text-white ">
-                        平淡
-                      </span>
-                    </div>
-                   </div>
-                   <!-- 備註 -->
-                   <div class="grid col-span-2 gap-6">
-                    <div>
+                    <!-- 備註 -->
+                    <div class="col-span-2">
                       <p class="mb-4">行為表現</p>
                       <div class="w-full space-y-3">
                         <textarea class="block w-full h-full px-4 py-3 text-sm border-gray-200 rounded-lg focus:border-amber-300 focus:ring-amber-300 disabled:opacity-50 disabled:pointer-events-none placeholder:text-gray-400" rows="6" placeholder="請輸入訊息"></textarea>
                       </div>
-                    </div>
-                    <div>
-                      <p class="mb-4">補充</p>
-                      <div class="w-full space-y-3">
-                        <textarea class="block w-full h-full px-4 py-3 text-sm border-gray-200 rounded-lg focus:border-amber-300 focus:ring-amber-300 disabled:opacity-50 disabled:pointer-events-none placeholder:text-gray-400" rows="6" placeholder="請輸入訊息"></textarea>
-                      </div>
-                    </div>
-                 </div>
-                </div>
-              </div>
-             </div>
-          </div>
-          <!-- 定向感 -->
-          <div id="segment-2" class="hidden" role="tabpanel" aria-labelledby="segment-item-2">
-            <!-- 內容 -->
-            <div class="grid grid-cols-10 gap-6 mb-6 text-left">
-              <!-- 左 -->
-              <div class="flex flex-col col-span-4">
-                <p class="mb-4 text-2xl text-blue-600">
-                  施測項目：今天日期（共 3 分）
-                </p>
-                <div class="grid flex-grow grid-cols-2 gap-4 text-6xl text-right">
-                  <div class="flex items-center justify-center col-span-2 p-12 border border-gray-200 bg-sky-100">
-                    年
                   </div>
-                  <div class="flex items-center justify-center p-12 border border-gray-200 bg-sky-100">
-                    月
-                  </div>
-                  <div class="flex items-center justify-center p-12 border border-gray-200 bg-sky-100">
-                    日
-                  </div>
-                  <div class="flex items-start justify-start col-span-2 p-12 text-left border border-gray-200 bg-sky-100">
-                    星期
-                  </div>
-                </div>
-              </div>
-              <!-- 中 -->
-              <div class="flex flex-col col-span-3">
-                <p class="mb-4 text-2xl text-gray-600">
-                  標準答案參考
-                </p>
-                <div class="grid flex-grow grid-cols-2 gap-4 text-3xl text-center">
-                  <div class="flex items-center justify-center col-span-2 p-12 border border-gray-200 bg-sky-50">
-                    111 年
-                  </div>
-                  <div class="flex items-center justify-center p-12 border border-gray-200 bg-sky-50">
-                    11 月
-                  </div>
-                  <div class="flex items-center justify-center p-12 border border-gray-200 bg-sky-50">
-                    11 日
-                  </div>
-                  <div class="flex items-center justify-center col-span-2 p-12 border border-gray-200 bg-sky-50">
-                    星期一
-                  </div>
-                </div>
-              </div>
-              <!-- 右 -->
-              <div class="flex flex-col col-span-3">
-                <p class="mb-4 text-2xl text-gray-600">
-                  施測人員：
-                  <span>
-                    許ＯＯ
-                  </span>
-                </p>
-                <div class="flex flex-col flex-grow p-4 text-xl border border-gray-200 bg-sky-50">
-                  <p class="mb-2">此測驗得分：
-                    <span>0</span>
-                  </p>
-                  <p class="mb-4 text-lg">（全選才有得分）</p>
-                  <div class="grid grid-cols-2 gap-4 text-xl font-semibold">
-                    <button type="button" class="px-4 py-3 text-center text-white border border-transparent rounded-full bg-sky-500 hover:bg-sky-600 disabled:opacity-50 disabled:pointer-events-none">
-                      年
-                    </button>
-                    <button type="button" class="px-4 py-3 text-center bg-white border-2 rounded-full text-sky-500 border-sky-500 hover:bg-sky-500 disabled:opacity-50 disabled:pointer-events-none hover:text-white">
-                      月
-                    </button>
-                    <button type="button" class="px-4 py-3 text-center bg-white border-2 rounded-full text-sky-500 border-sky-500 hover:bg-sky-500 disabled:opacity-50 disabled:pointer-events-none hover:text-white">
-                      日
-                    </button>
-                    <button type="button" class="px-4 py-3 text-center bg-white border-2 rounded-full text-sky-500 border-sky-500 hover:bg-sky-500 disabled:opacity-50 disabled:pointer-events-none hover:text-white">
-                      星期
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- 按鈕 -->
-            <div class="flex justify-between ">
-              <button onclick="" id="prePage" class="px-12 py-5 text-3xl font-bold text-gray-300 bg-gray-100 border-4 border-gray-200 rounded-full cursor-default w-fit">
-                上一題
-              </button>
-              <button onclick="switchTab(3)" id="nextPage" class="px-12 py-5 text-3xl font-bold text-gray-900 rounded-full bg-amber-300 w-fit">
-                下一題
-              </button>
-            </div>
-          </div>
-          <!-- 執行 / 專注 -->
-          <div id="segment-3" class="hidden" role="tabpanel" aria-labelledby="segment-item-3">
-            <!-- 內容 -->
-            <div class="grid grid-cols-10 gap-6 mb-6 text-left">
-              <!-- 左 -->
-              <div class="flex flex-col col-span-7">
-                <p class="mb-4 text-2xl text-blue-600">
-                  施測項目：畫時鐘 
-                  <time>11:00</time>（
-                  共 3 分）
-                </p>
-                <div class="h-full border border-gray-200 bg-sky-100">
-                  <img src="https://images.unsplash.com/photo-1714983020617-9397757fd58d?q=80&w=2746&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
-                </div>
-              </div>
-              
-              <!-- 右 -->
-              <div class="flex flex-col col-span-3">
-                <p class="mb-4 text-2xl text-gray-600">
-                  施測人員：
-                  <span>
-                    許ＯＯ
-                  </span>
-                </p>
-                <div class="flex flex-col flex-grow p-4 text-xl border border-gray-200 bg-sky-50">
-                  <p class="mb-2">此測驗得分：
-                    <span>3</span>
-                  </p>
-                  <p class="mb-4 text-lg">（全選才有得分）</p>
-                  <div class="grid grid-cols-2 gap-4 text-xl font-semibold">
-                    <button type="button" class="px-4 py-3 text-center text-white border border-transparent rounded-full bg-sky-500 hover:bg-sky-600 disabled:opacity-50 disabled:pointer-events-none">
-                      形狀
-                    </button>
-                    <button type="button" class="px-4 py-3 text-center bg-white border-2 rounded-full text-sky-500 border-sky-500 hover:bg-sky-500 disabled:opacity-50 disabled:pointer-events-none hover:text-white">
-                      數字
-                    </button>
-                    <button type="button" class="px-4 py-3 text-center bg-white border-2 rounded-full text-sky-500 border-sky-500 hover:bg-sky-500 disabled:opacity-50 disabled:pointer-events-none hover:text-white">
-                      指針
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- 按鈕 -->
-            <div class="flex justify-between ">
-              <button onclick="switchTab(2)" id="prePage" class="px-12 py-5 text-3xl font-bold text-gray-900 bg-gray-100 border-4 border-gray-300 rounded-full w-fit">
-                上一題
-              </button>
-              <button onclick="switchTab(4)" id="nextPage" class="px-12 py-5 text-3xl font-bold text-gray-900 rounded-full bg-amber-300 w-fit">
-                下一題
-              </button>
-            </div>
-          </div>
-          <!-- 專注 / 計算 -->
-          <div id="segment-4" class="hidden" role="tabpanel" aria-labelledby="segment-item-4">
-            <!-- 內容 -->
-            <div class="grid grid-cols-10 gap-6 mb-6 text-left">
-              <!-- 左 -->
-              <div class="flex flex-col col-span-7">
-                <p class="mb-4 text-2xl text-blue-600">
-                  施測項目：100 開始連續減 7（共 5 分）
-                </p>
-                <div class="h-full ">
-                  <div class="grid grid-cols-3 gap-4">
-                    <div class="px-8 py-12 text-6xl text-center bg-white border border-gray-200">
-                      100
-                    </div>
-                    <div class="px-8 py-12 text-6xl text-center border border-gray-200 bg-sky-100">
-                      93
-                    </div>
-                    <div class="px-8 py-12 text-6xl text-center border border-gray-200 bg-sky-100">
-                      86
-                    </div>
-                    <div class="px-8 py-12 text-6xl text-center border border-gray-200 bg-sky-100">
-                      79
-                    </div>
-                    <div class="px-8 py-12 text-6xl text-center border border-gray-200 bg-sky-100">
-                      72
-                    </div>
-                    <div class="px-8 py-12 text-6xl text-center border border-gray-200 bg-sky-100">
-                      65
-                    </div>
-                  </div>
-                </div>
-              </div>
-              
-              <!-- 右 -->
-              <div class="flex flex-col col-span-3">
-                <p class="mb-4 text-2xl text-gray-600">
-                  施測人員：
-                  <span>
-                    許ＯＯ
-                  </span>
-                </p>
-                <div class="flex flex-col flex-grow p-4 text-xl border border-gray-200 bg-sky-50">
-                  <p class="mb-2">此測驗得分：
-                    <span>5</span>
-                  </p>
-                  <p class="mb-4 text-lg">（全選才有得分）</p>
-                  <div class="grid grid-cols-3 gap-4 text-xl font-semibold">
-                    <button type="button" class="px-4 py-3 text-center text-white border border-transparent rounded-full bg-sky-500 hover:bg-sky-600 disabled:opacity-50 disabled:pointer-events-none">
-                      1
-                    </button>
-                    <button type="button" class="px-4 py-3 text-center bg-white border-2 rounded-full text-sky-500 border-sky-500 hover:bg-sky-500 disabled:opacity-50 disabled:pointer-events-none hover:text-white">
-                      2
-                    </button>
-                    <button type="button" class="px-4 py-3 text-center bg-white border-2 rounded-full text-sky-500 border-sky-500 hover:bg-sky-500 disabled:opacity-50 disabled:pointer-events-none hover:text-white">
-                      3
-                    </button>
-                    <button type="button" class="px-4 py-3 text-center bg-white border-2 rounded-full text-sky-500 border-sky-500 hover:bg-sky-500 disabled:opacity-50 disabled:pointer-events-none hover:text-white">
-                      4
-                    </button>
-                    <button type="button" class="px-4 py-3 text-center bg-white border-2 rounded-full text-sky-500 border-sky-500 hover:bg-sky-500 disabled:opacity-50 disabled:pointer-events-none hover:text-white">
-                      5
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- 按鈕 -->
-            <div class="flex justify-between ">
-              <button onclick="switchTab(3)" id="prePage" class="px-12 py-5 text-3xl font-bold text-gray-900 bg-gray-100 border-4 border-gray-300 rounded-full w-fit">
-                上一題
-              </button>
-              <button onclick="switchTab(5)" id="nextPage" class="px-12 py-5 text-3xl font-bold text-gray-900 rounded-full bg-amber-300 w-fit">
-                下一題
-              </button>
-            </div>
-          </div>
-          <!-- 視覺追蹤 -->
-          <div id="segment-5" class="hidden" role="tabpanel" aria-labelledby="segment-item-5">
-            <!-- 內容 -->
-            <div class="grid grid-cols-10 gap-6 mb-6 text-left">
-              <!-- 左 -->
-              <div class="flex flex-col col-span-7">
-                <p class="mb-4 text-2xl text-blue-600">
-                  施測項目：彩繪路徑（共 1 分）
-                </p>
-                <div class="h-full border border-gray-200 bg-sky-100">
-                  <img src="https://images.unsplash.com/photo-1714983020617-9397757fd58d?q=80&w=2746&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
-                </div>
-              </div>
-              
-              <!-- 右 -->
-              <div class="flex flex-col col-span-3">
-                <p class="mb-4 text-2xl text-gray-600">
-                  施測人員：
-                  <span>
-                    許ＯＯ
-                  </span>
-                </p>
-                <div class="flex flex-col flex-grow p-4 text-xl border border-gray-200 bg-sky-50">
-                  <p class="mb-2">此測驗得分：
-                    <span>0</span>
-                  </p>
-                  <p class="mb-4 text-lg">（全選才有得分）</p>
-                  <div class="grid grid-cols-2 gap-4 text-xl font-semibold">
-                    <button type="button" class="px-4 py-3 text-center bg-white border-2 rounded-full text-sky-500 border-sky-500 hover:bg-sky-500 disabled:opacity-50 disabled:pointer-events-none hover:text-white">
-                      得分
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- 按鈕 -->
-            <div class="flex justify-between ">
-              <button onclick="switchTab(4)" id="prePage" class="px-12 py-5 text-3xl font-bold text-gray-900 bg-gray-100 border-4 border-gray-300 rounded-full w-fit">
-                上一題
-              </button>
-              <button onclick="switchTab(6)" id="nextPage" class="px-12 py-5 text-3xl font-bold text-gray-900 rounded-full bg-amber-300 w-fit">
-                下一題
-              </button>
-            </div>
-          </div>
-          <!-- 語言記憶 -->
-          <div id="segment-6" class="hidden" role="tabpanel" aria-labelledby="segment-item-6">
-            <!-- 內容 -->
-            <div class="mb-6 space-y-8 text-left">
-              <!-- 語言理解 -->
-              <div class="grid grid-cols-10 gap-6">
-                <!-- 左 -->
-                <div class="col-span-7 ">
-                  
-                  <div>
-                    <p class="mb-4 text-2xl text-blue-600">
-                      施測項目：語言理解 / 命名（共 3 分）
-                    </p>
-                    <audio id="audioPlayer" controls class="w-full border-2 border-gray-300 rounded-full">
-                      <source src="your-song.mp3" type="audio/mpeg" class="">
-                    </audio>
-                  </div>
-                </div>
-                
-                <!-- 右 -->
-                <div class="flex flex-col col-span-3">
-                  <p class="mb-4 text-2xl text-gray-600">
-                    施測人員：
-                    <span>
-                      許ＯＯ
-                    </span>
-                  </p>
-                  <div class="flex flex-col flex-grow p-4 text-xl border border-gray-200 bg-sky-50">
-                    <p class="mb-2">此測驗得分：
-                      <span>2</span>
-                    </p>
-                    <p class="mb-4 text-lg">（全選才有得分）</p>
-                    <div class="grid grid-cols-2 gap-4 text-xl font-semibold">
-                      <button type="button" class="px-4 py-3 text-center text-white border border-transparent rounded-full bg-sky-500 hover:bg-sky-600 disabled:opacity-50 disabled:pointer-events-none">
-                        碗
-                      </button>
-                      <button type="button" class="px-4 py-3 text-center bg-white border-2 rounded-full text-sky-500 border-sky-500 hover:bg-sky-500 disabled:opacity-50 disabled:pointer-events-none hover:text-white">
-                        筷子
-                      </button>
-                      <button type="button" class="px-4 py-3 text-center bg-white border-2 rounded-full text-sky-500 border-sky-500 hover:bg-sky-500 disabled:opacity-50 disabled:pointer-events-none hover:text-white">
-                        衛生紙
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- 延遲記憶 -->
-              <div class="grid grid-cols-10 gap-6">
-                <!-- 左 -->
-                <div class="col-span-7 ">
-                  
-                  <div>
-                    <p class="mb-4 text-2xl text-blue-600">
-                      施測項目：延遲記憶 / 複誦物件（共 5 分）
-                    </p>
-                    <audio id="audioPlayer" controls class="w-full border-2 border-gray-300 rounded-full">
-                      <source src="your-song.mp3" type="audio/mpeg" class="">
-                    </audio>
-                  </div>
-                </div>
-                
-                <!-- 右 -->
-                <div class="flex flex-col col-span-3">
-                  <p class="mb-4 text-2xl text-gray-600">
-                    施測人員：
-                    <span>
-                      許ＯＯ
-                    </span>
-                  </p>
-                  <div class="flex flex-col flex-grow p-4 text-xl border border-gray-200 bg-sky-50">
-                    <p class="mb-2">此測驗得分：
-                      <span>3</span>
-                    </p>
-                    <p class="mb-4 text-lg">（全選才有得分）</p>
-                    <div class="grid grid-cols-2 gap-4 text-xl font-semibold">
-                      <button type="button" class="px-4 py-3 text-center text-white border border-transparent rounded-full bg-sky-500 hover:bg-sky-600 disabled:opacity-50 disabled:pointer-events-none">
-                        臉
-                      </button>
-                      <button type="button" class="px-4 py-3 text-center bg-white border-2 rounded-full text-sky-500 border-sky-500 hover:bg-sky-500 disabled:opacity-50 disabled:pointer-events-none hover:text-white">
-                        絨布
-                      </button>
-                      <button type="button" class="px-4 py-3 text-center bg-white border-2 rounded-full text-sky-500 border-sky-500 hover:bg-sky-500 disabled:opacity-50 disabled:pointer-events-none hover:text-white">
-                        教堂
-                      </button>
-                      <button type="button" class="px-4 py-3 text-center bg-white border-2 rounded-full text-sky-500 border-sky-500 hover:bg-sky-500 disabled:opacity-50 disabled:pointer-events-none hover:text-white">
-                        菊花
-                      </button>
-                      <button type="button" class="px-4 py-3 text-center bg-white border-2 rounded-full text-sky-500 border-sky-500 hover:bg-sky-500 disabled:opacity-50 disabled:pointer-events-none hover:text-white">
-                        紅色
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- 按鈕 -->
-            <div class="flex justify-between ">
-              <button onclick="switchTab(5)" id="prePage" class="px-12 py-5 text-3xl font-bold text-gray-900 bg-gray-100 border-4 border-gray-300 rounded-full w-fit">
-                上一題
-              </button>
-              <button onclick="switchTab(7)" id="nextPage" class="px-12 py-5 text-3xl font-bold text-gray-900 rounded-full bg-amber-300 w-fit">
-                下一題
-              </button>
-            </div>
-          </div>
-          <!-- 結算 -->
-          <div id="segment-7" class="hidden" role="tabpanel" aria-labelledby="segment-item-7">
-            <!-- 內容 -->
-            <div class="grid grid-cols-10 gap-6 mb-6 text-left">
-              <!-- 左 -->
-              <div class="flex flex-col max-h-screen col-span-7 gap-8 overflow-y-scroll">
-                <div class="flex justify-between mb-4 text-2xl text-gray-500">
-                  <p>
-                    檢測時間：
-                    <time datetime="2024-07-02 T10:50">2024-07-02 10:50</time>
-                  </p>
-                  <p>
-                    花費時間：
-                    <time>04:49:12</time>
-                  </p>
-                </div>
-                <!-- 施測項目 -->
-                <div class="p-4 text-2xl text-left text-gray-600 border border-gray-200 bg-blue-50 rounded-2xl">
-                  <p class="mb-4">施測項目與分數</p>
-                  <div class="grid grid-cols-2 text-xl text-gray-500 gap-y-8 gap-x-10">
-                    <div class="flex justify-between">
-                      <p>定向感</p>
-                      <p class="text-blue-700">3 / 4</p>
-                    </div>
-                    <div class="flex justify-between">
-                      <p>語言理解能力</p>
-                      <p class="text-blue-700">2 / 3</p>
-                    </div>
-                    <div class="flex justify-between">
-                      <p>執行 / 專注力</p>
-                      <p class="text-blue-700">1 / 3</p>
-                    </div>
-                    <div class="flex justify-between">
-                      <p>視覺追蹤能力</p>
-                      <p class="text-blue-700">0 / 1</p>
-                    </div>
-                    <div class="flex justify-between">
-                      <p>注意與計算能力</p>
-                      <p class="text-blue-700">4 / 5</p>
-                    </div>
-                    <div class="flex justify-between">
-                      <p>延遲記憶力</p>
-                      <p class="text-blue-700">4 / 5</p>
-                    </div>
-                  </div>
-               </div>
-               <div class="flex flex-col gap-8 text-2xl text-left">
-                <!-- 測前觀察 -->
-                <div class="g">
-                  <div class="inline-flex items-center gap-2 mb-4 text-gray-600">
-                    <i class="fa-regular fa-clipboard"></i>
-                    <p>測前觀察</p>
-                  </div>
-                  <div class="grid grid-cols-2 gap-6">
-                    <!-- 左 -->
-                    <div class="flex flex-col gap-6 p-4 text-xl text-white bg-blue-700 rounded-2xl">
-                      <!-- 狀態 -->
-                      <div>
-                          <p class="mb-4">情緒程度</p>
-                          <span class="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-lg  bg-sky-400 text-white ">
-                            平淡
-                          </span>
-                      </div>
-                      <!-- 備註 -->
-                      <div>
-                        <p class="mb-4">行為表現</p>
-                        <div class="w-full space-y-3">
-                          <textarea class="block w-full h-full px-4 py-3 text-sm border-gray-200 rounded-lg focus:border-amber-300 focus:ring-amber-300 disabled:opacity-50 disabled:pointer-events-none placeholder:text-gray-400" rows="6" placeholder="請輸入訊息"></textarea>
-                        </div>
-                    </div>
-                    </div>
-                    <!-- 右 -->
-                    <div class="flex flex-col gap-6 p-4 text-xl text-white bg-blue-700 rounded-2xl">
-                      <!-- 備註 -->
-                      <div class="col-span-2">
-                        <p class="mb-4">備註</p>
-                        <div class="w-full space-y-3">
-                          <textarea class="block w-full h-full px-4 py-3 text-sm border-gray-200 rounded-lg focus:border-amber-300 focus:ring-amber-300 disabled:opacity-50 disabled:pointer-events-none placeholder:text-gray-400" rows="11" placeholder="請輸入訊息"></textarea>
-                        </div>
-                    </div>
-                    </div>
                   </div>
                 </div>
                 <!-- 檢後紀錄 -->
@@ -749,7 +251,7 @@
                   </div>
                   <div class="grid grid-cols-3 p-4 text-xl text-white bg-blue-700 rounded-2xl">
                     <!-- 狀態 -->
-                     <div class="grid gap-6">
+                    <div class="grid gap-6">
                       <div>
                         <p class="mb-4">參與度</p>
                         <span class="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-lg  bg-sky-400 text-white ">
@@ -774,9 +276,9 @@
                           平淡
                         </span>
                       </div>
-                     </div>
-                     <!-- 備註 -->
-                     <div class="grid col-span-2 gap-6">
+                    </div>
+                    <!-- 備註 -->
+                    <div class="grid col-span-2 gap-6">
                       <div>
                         <p class="mb-4">行為表現</p>
                         <div class="w-full space-y-3">
@@ -789,43 +291,546 @@
                           <textarea class="block w-full h-full px-4 py-3 text-sm border-gray-200 rounded-lg focus:border-amber-300 focus:ring-amber-300 disabled:opacity-50 disabled:pointer-events-none placeholder:text-gray-400" rows="6" placeholder="請輸入訊息"></textarea>
                         </div>
                       </div>
-                   </div>
+                  </div>
                   </div>
                 </div>
-               </div>
               </div>
-              
-              <!-- 右 -->
-              <div class="flex flex-col col-span-3 gap-6">
-                <!-- 分數 -->
-                <div class="flex flex-col col-span-2 gap-4 p-4 text-2xl text-gray-600 bg-white border-8 border-blue-600 rounded-2xl">
-                  <p class="text-left">總分</p>
-                  <p class="text-blue-600 text-8xl">17</p>
-                  <p class="text-right">/ 21</p>
+            </div>
+            <!-- 定向感 -->
+            <div id="segment-2" class="hidden" role="tabpanel" aria-labelledby="segment-item-2">
+              <!-- 內容 -->
+              <div class="grid grid-cols-10 gap-6 mb-6 text-left">
+                <!-- 左 -->
+                <div class="flex flex-col col-span-4">
+                  <p class="mb-4 text-2xl text-blue-600">
+                    施測項目：今天日期（共 3 分）
+                  </p>
+                  <div class="grid flex-grow grid-cols-2 gap-4 text-6xl text-right">
+                    <div class="flex items-center justify-center col-span-2 p-12 border border-gray-200 bg-sky-100">
+                      年
+                    </div>
+                    <div class="flex items-center justify-center p-12 border border-gray-200 bg-sky-100">
+                      月
+                    </div>
+                    <div class="flex items-center justify-center p-12 border border-gray-200 bg-sky-100">
+                      日
+                    </div>
+                    <div class="flex items-start justify-start col-span-2 p-12 text-left border border-gray-200 bg-sky-100">
+                      星期
+                    </div>
+                  </div>
                 </div>
-                <!-- 人員 -->
-                <div class="space-y-4 text-2xl text-gray-600">
-                  <p >
+                <!-- 中 -->
+                <div class="flex flex-col col-span-3">
+                  <p class="mb-4 text-2xl text-gray-600">
+                    標準答案參考
+                  </p>
+                  <div class="grid flex-grow grid-cols-2 gap-4 text-3xl text-center">
+                    <div class="flex items-center justify-center col-span-2 p-12 border border-gray-200 bg-sky-50">
+                      111 年
+                    </div>
+                    <div class="flex items-center justify-center p-12 border border-gray-200 bg-sky-50">
+                      11 月
+                    </div>
+                    <div class="flex items-center justify-center p-12 border border-gray-200 bg-sky-50">
+                      11 日
+                    </div>
+                    <div class="flex items-center justify-center col-span-2 p-12 border border-gray-200 bg-sky-50">
+                      星期一
+                    </div>
+                  </div>
+                </div>
+                <!-- 右 -->
+                <div class="flex flex-col col-span-3">
+                  <p class="mb-4 text-2xl text-gray-600">
                     施測人員：
                     <span>
                       許ＯＯ
                     </span>
                   </p>
-                  <div>
-                    <p class="mb-2">評分者：</p>
-                    <select class="block w-full px-4 py-3 text-2xl text-center border-gray-200 rounded-lg pe-9 focus:border-amber-300 focus:ring-amber-300 disabled:opacity-50 disabled:pointer-events-none">
-                      <option selected="">請選擇評分人員</option>
-                      <option>1</option>
-                      <option>2</option>
-                      <option>3</option>
-                    </select>
+                  <div class="flex flex-col flex-grow p-4 text-xl border border-gray-200 bg-sky-50">
+                    <p class="mb-2">此測驗得分：
+                      <span>0</span>
+                    </p>
+                    <p class="mb-4 text-lg">（全選才有得分）</p>
+                    <div class="grid grid-cols-2 gap-4 text-xl font-semibold">
+                      <button type="button" class="px-4 py-3 text-center text-white border border-transparent rounded-full bg-sky-500 hover:bg-sky-600 disabled:opacity-50 disabled:pointer-events-none">
+                        年
+                      </button>
+                      <button type="button" class="px-4 py-3 text-center bg-white border-2 rounded-full text-sky-500 border-sky-500 hover:bg-sky-500 disabled:opacity-50 disabled:pointer-events-none hover:text-white">
+                        月
+                      </button>
+                      <button type="button" class="px-4 py-3 text-center bg-white border-2 rounded-full text-sky-500 border-sky-500 hover:bg-sky-500 disabled:opacity-50 disabled:pointer-events-none hover:text-white">
+                        日
+                      </button>
+                      <button type="button" class="px-4 py-3 text-center bg-white border-2 rounded-full text-sky-500 border-sky-500 hover:bg-sky-500 disabled:opacity-50 disabled:pointer-events-none hover:text-white">
+                        星期
+                      </button>
+                    </div>
                   </div>
                 </div>
-                <!-- 送出 -->
-                <button  id="confirm" class="px-12 py-5 text-3xl font-bold text-gray-900 rounded-full bg-amber-300 w-fit">
-                  送出評分
-                  <i class="ml-2 fa-solid fa-arrow-right"></i>
+              </div>
+              <!-- 按鈕 -->
+              <div class="flex justify-between ">
+                <button onclick="" id="prePage" class="px-12 py-5 text-3xl font-bold text-gray-300 bg-gray-100 border-4 border-gray-200 rounded-full cursor-default w-fit">
+                  上一題
                 </button>
+                <button onclick="switchTab(3)" id="nextPage" class="px-12 py-5 text-3xl font-bold text-gray-900 rounded-full bg-amber-300 w-fit">
+                  下一題
+                </button>
+              </div>
+            </div>
+            <!-- 執行 / 專注 -->
+            <div id="segment-3" class="hidden" role="tabpanel" aria-labelledby="segment-item-3">
+              <!-- 內容 -->
+              <div class="grid grid-cols-10 gap-6 mb-6 text-left">
+                <!-- 左 -->
+                <div class="flex flex-col col-span-7">
+                  <p class="mb-4 text-2xl text-blue-600">
+                    施測項目：畫時鐘 
+                    <time>11:00</time>（
+                    共 3 分）
+                  </p>
+                  <div class="h-full px-6 py-12 text-center border border-gray-200 bg-sky-100">
+                    <img src="../img/clock-g.png" alt="">
+                    <p  class="mt-12 text-2xl text-gray-800 ">
+                      請圈出 11:10 的時鐘
+                    </p>
+                  </div>
+                </div>
+                
+                <!-- 右 -->
+                <div class="flex flex-col col-span-3">
+                  <p class="mb-4 text-2xl text-gray-600">
+                    施測人員：
+                    <span>
+                      許ＯＯ
+                    </span>
+                  </p>
+                  <div class="flex flex-col flex-grow p-4 text-xl border border-gray-200 bg-sky-50">
+                    <p class="mb-2">此測驗得分：
+                      <span>3</span>
+                    </p>
+                    <p class="mb-4 text-lg">（全選才有得分）</p>
+                    <div class="grid grid-cols-2 gap-4 text-xl font-semibold">
+                      <button type="button" class="px-4 py-3 text-center text-white border border-transparent rounded-full bg-sky-500 hover:bg-sky-600 disabled:opacity-50 disabled:pointer-events-none">
+                        形狀
+                      </button>
+                      <button type="button" class="px-4 py-3 text-center bg-white border-2 rounded-full text-sky-500 border-sky-500 hover:bg-sky-500 disabled:opacity-50 disabled:pointer-events-none hover:text-white">
+                        數字
+                      </button>
+                      <button type="button" class="px-4 py-3 text-center bg-white border-2 rounded-full text-sky-500 border-sky-500 hover:bg-sky-500 disabled:opacity-50 disabled:pointer-events-none hover:text-white">
+                        指針
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- 按鈕 -->
+              <div class="flex justify-between ">
+                <button onclick="switchTab(2)" id="prePage" class="px-12 py-5 text-3xl font-bold text-gray-900 bg-gray-100 border-4 border-gray-300 rounded-full w-fit">
+                  上一題
+                </button>
+                <button onclick="switchTab(4)" id="nextPage" class="px-12 py-5 text-3xl font-bold text-gray-900 rounded-full bg-amber-300 w-fit">
+                  下一題
+                </button>
+              </div>
+            </div>
+            <!-- 專注 / 計算 -->
+            <div id="segment-4" class="hidden" role="tabpanel" aria-labelledby="segment-item-4">
+              <!-- 內容 -->
+              <div class="grid grid-cols-10 gap-6 mb-6 text-left">
+                <!-- 左 -->
+                <div class="flex flex-col col-span-7">
+                  <p class="mb-4 text-2xl text-blue-600">
+                    施測項目：100 開始連續減 7（共 5 分）
+                  </p>
+                  <div class="h-full ">
+                    <div class="grid grid-cols-3 gap-4">
+                      <div class="px-8 py-12 text-6xl text-center bg-white border border-gray-200">
+                        100
+                      </div>
+                      <div class="px-8 py-12 text-6xl text-center border border-gray-200 bg-sky-100">
+                        93
+                      </div>
+                      <div class="px-8 py-12 text-6xl text-center border border-gray-200 bg-sky-100">
+                        86
+                      </div>
+                      <div class="px-8 py-12 text-6xl text-center border border-gray-200 bg-sky-100">
+                        79
+                      </div>
+                      <div class="px-8 py-12 text-6xl text-center border border-gray-200 bg-sky-100">
+                        72
+                      </div>
+                      <div class="px-8 py-12 text-6xl text-center border border-gray-200 bg-sky-100">
+                        65
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <!-- 右 -->
+                <div class="flex flex-col col-span-3">
+                  <p class="mb-4 text-2xl text-gray-600">
+                    施測人員：
+                    <span>
+                      許ＯＯ
+                    </span>
+                  </p>
+                  <div class="flex flex-col flex-grow p-4 text-xl border border-gray-200 bg-sky-50">
+                    <p class="mb-2">此測驗得分：
+                      <span>5</span>
+                    </p>
+                    <p class="mb-4 text-lg">（全選才有得分）</p>
+                    <div class="grid grid-cols-3 gap-4 text-xl font-semibold">
+                      <button type="button" class="px-4 py-3 text-center text-white border border-transparent rounded-full bg-sky-500 hover:bg-sky-600 disabled:opacity-50 disabled:pointer-events-none">
+                        1
+                      </button>
+                      <button type="button" class="px-4 py-3 text-center bg-white border-2 rounded-full text-sky-500 border-sky-500 hover:bg-sky-500 disabled:opacity-50 disabled:pointer-events-none hover:text-white">
+                        2
+                      </button>
+                      <button type="button" class="px-4 py-3 text-center bg-white border-2 rounded-full text-sky-500 border-sky-500 hover:bg-sky-500 disabled:opacity-50 disabled:pointer-events-none hover:text-white">
+                        3
+                      </button>
+                      <button type="button" class="px-4 py-3 text-center bg-white border-2 rounded-full text-sky-500 border-sky-500 hover:bg-sky-500 disabled:opacity-50 disabled:pointer-events-none hover:text-white">
+                        4
+                      </button>
+                      <button type="button" class="px-4 py-3 text-center bg-white border-2 rounded-full text-sky-500 border-sky-500 hover:bg-sky-500 disabled:opacity-50 disabled:pointer-events-none hover:text-white">
+                        5
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- 按鈕 -->
+              <div class="flex justify-between ">
+                <button onclick="switchTab(3)" id="prePage" class="px-12 py-5 text-3xl font-bold text-gray-900 bg-gray-100 border-4 border-gray-300 rounded-full w-fit">
+                  上一題
+                </button>
+                <button onclick="switchTab(5)" id="nextPage" class="px-12 py-5 text-3xl font-bold text-gray-900 rounded-full bg-amber-300 w-fit">
+                  下一題
+                </button>
+              </div>
+            </div>
+            <!-- 視覺追蹤 -->
+            <div id="segment-5" class="hidden" role="tabpanel" aria-labelledby="segment-item-5">
+              <!-- 內容 -->
+              <div class="grid grid-cols-10 gap-6 mb-6 text-left">
+                <!-- 左 -->
+                <div class="flex flex-col col-span-7">
+                  <p class="mb-4 text-2xl text-blue-600">
+                    施測項目：彩繪路徑（共 1 分）
+                  </p>
+                  <div class="h-full border border-gray-200 bg-sky-100">
+                    <img src="../img/game.png" alt="">
+                  </div>
+                </div>
+                
+                <!-- 右 -->
+                <div class="flex flex-col col-span-3">
+                  <p class="mb-4 text-2xl text-gray-600">
+                    施測人員：
+                    <span>
+                      許ＯＯ
+                    </span>
+                  </p>
+                  <div class="flex flex-col flex-grow p-4 text-xl border border-gray-200 bg-sky-50">
+                    <p class="mb-2">此測驗得分：
+                      <span>0</span>
+                    </p>
+                    <p class="mb-4 text-lg">（全選才有得分）</p>
+                    <div class="grid grid-cols-2 gap-4 text-xl font-semibold">
+                      <button type="button" class="px-4 py-3 text-center bg-white border-2 rounded-full text-sky-500 border-sky-500 hover:bg-sky-500 disabled:opacity-50 disabled:pointer-events-none hover:text-white">
+                        得分
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- 按鈕 -->
+              <div class="flex justify-between ">
+                <button onclick="switchTab(4)" id="prePage" class="px-12 py-5 text-3xl font-bold text-gray-900 bg-gray-100 border-4 border-gray-300 rounded-full w-fit">
+                  上一題
+                </button>
+                <button onclick="switchTab(6)" id="nextPage" class="px-12 py-5 text-3xl font-bold text-gray-900 rounded-full bg-amber-300 w-fit">
+                  下一題
+                </button>
+              </div>
+            </div>
+            <!-- 語言記憶 -->
+            <div id="segment-6" class="hidden" role="tabpanel" aria-labelledby="segment-item-6">
+              <!-- 內容 -->
+              <div class="mb-6 space-y-8 text-left">
+                <!-- 語言理解 -->
+                <div class="grid grid-cols-10 gap-6">
+                  <!-- 左 -->
+                  <div class="col-span-7 ">
+                    
+                    <div>
+                      <p class="mb-4 text-2xl text-blue-600">
+                        施測項目：語言理解 / 命名（共 3 分）
+                      </p>
+                      <audio id="audioPlayer" controls class="w-full border-2 border-gray-300 rounded-full">
+                        <source src="your-song.mp3" type="audio/mpeg" class="">
+                      </audio>
+                    </div>
+                  </div>
+                  
+                  <!-- 右 -->
+                  <div class="flex flex-col col-span-3">
+                    <p class="mb-4 text-2xl text-gray-600">
+                      施測人員：
+                      <span>
+                        許ＯＯ
+                      </span>
+                    </p>
+                    <div class="flex flex-col flex-grow p-4 text-xl border border-gray-200 bg-sky-50">
+                      <p class="mb-2">此測驗得分：
+                        <span>2</span>
+                      </p>
+                      <p class="mb-4 text-lg">（全選才有得分）</p>
+                      <div class="grid grid-cols-2 gap-4 text-xl font-semibold">
+                        <button type="button" class="px-4 py-3 text-center text-white border border-transparent rounded-full bg-sky-500 hover:bg-sky-600 disabled:opacity-50 disabled:pointer-events-none">
+                          碗
+                        </button>
+                        <button type="button" class="px-4 py-3 text-center bg-white border-2 rounded-full text-sky-500 border-sky-500 hover:bg-sky-500 disabled:opacity-50 disabled:pointer-events-none hover:text-white">
+                          筷子
+                        </button>
+                        <button type="button" class="px-4 py-3 text-center bg-white border-2 rounded-full text-sky-500 border-sky-500 hover:bg-sky-500 disabled:opacity-50 disabled:pointer-events-none hover:text-white">
+                          衛生紙
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- 延遲記憶 -->
+                <div class="grid grid-cols-10 gap-6">
+                  <!-- 左 -->
+                  <div class="col-span-7 ">
+                    
+                    <div>
+                      <p class="mb-4 text-2xl text-blue-600">
+                        施測項目：延遲記憶 / 複誦物件（共 5 分）
+                      </p>
+                      <audio id="audioPlayer" controls class="w-full border-2 border-gray-300 rounded-full">
+                        <source src="your-song.mp3" type="audio/mpeg" class="">
+                      </audio>
+                    </div>
+                  </div>
+                  
+                  <!-- 右 -->
+                  <div class="flex flex-col col-span-3">
+                    <p class="mb-4 text-2xl text-gray-600">
+                      施測人員：
+                      <span>
+                        許ＯＯ
+                      </span>
+                    </p>
+                    <div class="flex flex-col flex-grow p-4 text-xl border border-gray-200 bg-sky-50">
+                      <p class="mb-2">此測驗得分：
+                        <span>3</span>
+                      </p>
+                      <p class="mb-4 text-lg">（全選才有得分）</p>
+                      <div class="grid grid-cols-2 gap-4 text-xl font-semibold">
+                        <button type="button" class="px-4 py-3 text-center text-white border border-transparent rounded-full bg-sky-500 hover:bg-sky-600 disabled:opacity-50 disabled:pointer-events-none">
+                          臉
+                        </button>
+                        <button type="button" class="px-4 py-3 text-center bg-white border-2 rounded-full text-sky-500 border-sky-500 hover:bg-sky-500 disabled:opacity-50 disabled:pointer-events-none hover:text-white">
+                          絨布
+                        </button>
+                        <button type="button" class="px-4 py-3 text-center bg-white border-2 rounded-full text-sky-500 border-sky-500 hover:bg-sky-500 disabled:opacity-50 disabled:pointer-events-none hover:text-white">
+                          教堂
+                        </button>
+                        <button type="button" class="px-4 py-3 text-center bg-white border-2 rounded-full text-sky-500 border-sky-500 hover:bg-sky-500 disabled:opacity-50 disabled:pointer-events-none hover:text-white">
+                          菊花
+                        </button>
+                        <button type="button" class="px-4 py-3 text-center bg-white border-2 rounded-full text-sky-500 border-sky-500 hover:bg-sky-500 disabled:opacity-50 disabled:pointer-events-none hover:text-white">
+                          紅色
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- 按鈕 -->
+              <div class="flex justify-between ">
+                <button onclick="switchTab(5)" id="prePage" class="px-12 py-5 text-3xl font-bold text-gray-900 bg-gray-100 border-4 border-gray-300 rounded-full w-fit">
+                  上一題
+                </button>
+                <button onclick="switchTab(7)" id="nextPage" class="px-12 py-5 text-3xl font-bold text-gray-900 rounded-full bg-amber-300 w-fit">
+                  下一題
+                </button>
+              </div>
+            </div>
+            <!-- 結算 -->
+            <div id="segment-7" class="hidden" role="tabpanel" aria-labelledby="segment-item-7">
+              <!-- 內容 -->
+              <div class="grid grid-cols-10 gap-6 mb-6 text-left">
+                <!-- 左 -->
+                <div class="flex flex-col max-h-screen col-span-7 gap-8 overflow-y-scroll">
+                  <div class="flex justify-between mb-4 text-2xl text-gray-500">
+                    <p>
+                      檢測時間：
+                      <time datetime="2024-07-02 T10:50">2024-07-02 10:50</time>
+                    </p>
+                    <p>
+                      花費時間：
+                      <time>04:49:12</time>
+                    </p>
+                  </div>
+                  <!-- 施測項目 -->
+                  <div class="p-4 text-2xl text-left text-gray-600 border border-gray-200 bg-blue-50 rounded-2xl">
+                    <p class="mb-4">施測項目與分數</p>
+                    <div class="grid grid-cols-2 text-xl text-gray-500 gap-y-8 gap-x-10">
+                      <div class="flex justify-between">
+                        <p>定向感</p>
+                        <p class="text-blue-700">3 / 4</p>
+                      </div>
+                      <div class="flex justify-between">
+                        <p>語言理解能力</p>
+                        <p class="text-blue-700">2 / 3</p>
+                      </div>
+                      <div class="flex justify-between">
+                        <p>執行 / 專注力</p>
+                        <p class="text-blue-700">1 / 3</p>
+                      </div>
+                      <div class="flex justify-between">
+                        <p>視覺追蹤能力</p>
+                        <p class="text-blue-700">0 / 1</p>
+                      </div>
+                      <div class="flex justify-between">
+                        <p>注意與計算能力</p>
+                        <p class="text-blue-700">4 / 5</p>
+                      </div>
+                      <div class="flex justify-between">
+                        <p>延遲記憶力</p>
+                        <p class="text-blue-700">4 / 5</p>
+                      </div>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-8 text-2xl text-left">
+                  <!-- 測前觀察 -->
+                  <div class="g">
+                    <div class="inline-flex items-center gap-2 mb-4 text-gray-600">
+                      <i class="fa-regular fa-clipboard"></i>
+                      <p>測前觀察</p>
+                    </div>
+                    <div class="grid grid-cols-2 gap-6">
+                      <!-- 左 -->
+                      <div class="flex flex-col gap-6 p-4 text-xl text-white bg-blue-700 rounded-2xl">
+                        <!-- 狀態 -->
+                        <div>
+                            <p class="mb-4">情緒程度</p>
+                            <span class="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-lg  bg-sky-400 text-white ">
+                              平淡
+                            </span>
+                        </div>
+                        <!-- 備註 -->
+                        <div>
+                          <p class="mb-4">行為表現</p>
+                          <div class="w-full space-y-3">
+                            <textarea class="block w-full h-full px-4 py-3 text-sm border-gray-200 rounded-lg focus:border-amber-300 focus:ring-amber-300 disabled:opacity-50 disabled:pointer-events-none placeholder:text-gray-400" rows="6" placeholder="請輸入訊息"></textarea>
+                          </div>
+                      </div>
+                      </div>
+                      <!-- 右 -->
+                      <div class="flex flex-col gap-6 p-4 text-xl text-white bg-blue-700 rounded-2xl">
+                        <!-- 備註 -->
+                        <div class="col-span-2">
+                          <p class="mb-4">備註</p>
+                          <div class="w-full space-y-3">
+                            <textarea class="block w-full h-full px-4 py-3 text-sm border-gray-200 rounded-lg focus:border-amber-300 focus:ring-amber-300 disabled:opacity-50 disabled:pointer-events-none placeholder:text-gray-400" rows="11" placeholder="請輸入訊息"></textarea>
+                          </div>
+                      </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 檢後紀錄 -->
+                  <div class="text-gray-600">
+                    <div class="inline-flex items-center gap-2 mb-4">
+                      <i class="fa-regular fa-clipboard"></i>
+                      <p>檢後紀錄</p>
+                    </div>
+                    <div class="grid grid-cols-3 p-4 text-xl text-white bg-blue-700 rounded-2xl">
+                      <!-- 狀態 -->
+                      <div class="grid gap-6">
+                        <div>
+                          <p class="mb-4">參與度</p>
+                          <span class="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-lg  bg-sky-400 text-white ">
+                            偶須鼓勵
+                          </span>
+                        </div>
+                        <div>
+                          <p class="mb-4">注意力</p>
+                          <span class="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-lg  bg-sky-400 text-white ">
+                            75% - 50%
+                          </span>
+                        </div>
+                        <div>
+                          <p class="mb-4">指令</p>
+                          <span class="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-lg  bg-sky-400 text-white ">
+                            2 - 3 個指令
+                          </span>
+                        </div>
+                        <div>
+                          <p class="mb-4">情緒程度</p>
+                          <span class="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-lg  bg-sky-400 text-white ">
+                            平淡
+                          </span>
+                        </div>
+                      </div>
+                      <!-- 備註 -->
+                      <div class="grid col-span-2 gap-6">
+                        <div>
+                          <p class="mb-4">行為表現</p>
+                          <div class="w-full space-y-3">
+                            <textarea class="block w-full h-full px-4 py-3 text-sm border-gray-200 rounded-lg focus:border-amber-300 focus:ring-amber-300 disabled:opacity-50 disabled:pointer-events-none placeholder:text-gray-400" rows="6" placeholder="請輸入訊息"></textarea>
+                          </div>
+                        </div>
+                        <div>
+                          <p class="mb-4">補充</p>
+                          <div class="w-full space-y-3">
+                            <textarea class="block w-full h-full px-4 py-3 text-sm border-gray-200 rounded-lg focus:border-amber-300 focus:ring-amber-300 disabled:opacity-50 disabled:pointer-events-none placeholder:text-gray-400" rows="6" placeholder="請輸入訊息"></textarea>
+                          </div>
+                        </div>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+                </div>
+                
+                <!-- 右 -->
+                <div class="flex flex-col col-span-3 gap-6">
+                  <!-- 分數 -->
+                  <div class="flex flex-col col-span-2 gap-4 p-4 text-2xl text-gray-600 bg-white border-8 border-blue-600 rounded-2xl">
+                    <p class="text-left">總分</p>
+                    <p class="text-blue-600 text-8xl">17</p>
+                    <p class="text-right">/ 21</p>
+                  </div>
+                  <!-- 人員 -->
+                  <div class="space-y-4 text-2xl text-gray-600">
+                    <p >
+                      施測人員：
+                      <span>
+                        許ＯＯ
+                      </span>
+                    </p>
+                    <div>
+                      <p class="mb-2">評分者：</p>
+                      <select class="block w-full px-4 py-3 text-2xl text-center border-gray-200 rounded-lg pe-9 focus:border-amber-300 focus:ring-amber-300 disabled:opacity-50 disabled:pointer-events-none">
+                        <option selected="">請選擇評分人員</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                      </select>
+                    </div>
+                  </div>
+                  <!-- 送出 -->
+                  <button  id="confirm" class="px-12 py-5 text-3xl font-bold text-gray-900 rounded-full bg-amber-300 w-fit">
+                    送出評分
+                    <i class="ml-2 fa-solid fa-arrow-right"></i>
+                  </button>
+                </div>
               </div>
             </div>
           </div>
