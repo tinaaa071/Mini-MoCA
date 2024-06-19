@@ -148,7 +148,7 @@ function addEventListenersToButtons() {
           </div>
           <!-- Buttons -->
           <div class="flex justify-center gap-6">
-            <button id="edit" onclick="edit()" class="px-12 py-5 text-3xl font-bold text-gray-600 bg-white border border-gray-600 rounded-full w-fit">
+            <button id="edit" onclick="edit()" class="px-12 py-5 text-3xl font-bold text-gray-500 bg-white rounded-full ring-gray-300 ring-4 w-fit">
               編輯個案資訊
             </button>
             <a href="個案測前觀察.html" class="px-12 py-5 text-3xl font-bold text-gray-900 rounded-full bg-amber-300 w-fit">
