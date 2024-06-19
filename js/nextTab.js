@@ -7,7 +7,6 @@ function switchTab(nextTab) {
     // Remove active state from all tabs
     document.querySelectorAll('[role="tab"]').forEach((tab) => {
         tab.classList.remove('active');
-        tab.classList.remove('hs-tab-active:bg-white', );
     });
 
     // Show the next tab content
