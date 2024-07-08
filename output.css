@@ -2173,6 +2173,11 @@ input:checked + .toggle-bg{
   --tw-bg-opacity: 0.5;
 }
 
+.object-cover{
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .p-1{
   padding: 0.25rem;
 }
