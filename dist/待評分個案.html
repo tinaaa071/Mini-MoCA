@@ -849,6 +849,13 @@
     <!-- js -->
     <script src="../js/nextTab.js"></script>
     <script src="../js/confirmMessage.js"></script>
+    <script>
+      document.querySelectorAll('.btn').forEach(button => {
+        button.addEventListener('click', () => {
+          button.classList.toggle('btn-selected');
+        });
+      });
+    </script>
   
     <!-- Preline -->
     <script type="module">
