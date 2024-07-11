@@ -40,21 +40,13 @@
           <div class="">
             <div class="flex flex-col gap-6 pt-20 mb-12 text-2xl">
               <!-- 情緒 -->
-              <div class="flex items-center gap-8">
-                <label for="input-label" class="font-medium whitespace-nowrap">情緒程度</label>
+              <div class="flex items-center gap-12 emotion-group">
+                <label for="input-label" class="w-1/12 font-medium whitespace-nowrap">情緒程度</label>
                 <div class="flex gap-4 text-xl font-semibold">
-                  <button type="button" class="btn">
-                    多正向
-                  </button>
-                  <button type="button" class="btn">
-                    平淡
-                  </button>
-                  <button type="button" class="btn">
-                    多負向
-                  </button>
-                  <button type="button" class="btn">
-                    無法控制
-                  </button>
+                  <button type="button" class="btn">多正向</button>
+                  <button type="button" class="btn">平淡</button>
+                  <button type="button" class="btn">多負向</button>
+                  <button type="button" class="btn">無法控制</button>
                 </div>
               </div>
               <!-- 行為 -->
@@ -74,7 +66,8 @@
     </section>
   
     <!-- js -->
-  
+    <script src="../js/btnSelect.js"></script>
+    
     <!-- Preline -->
     <script type="module">
     import preline from 'https://cdn.jsdelivr.net/npm/preline@2.3.0/+esm'
