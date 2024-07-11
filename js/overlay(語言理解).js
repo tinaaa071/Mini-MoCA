@@ -14,6 +14,15 @@ closeButton.addEventListener('click', () => {
     hiddenText.classList.remove('hidden');
 });
 
+// 重新錄音
+document.getElementById('show-overlay-button').addEventListener('click', function() {
+    document.getElementById('overlay').style.display = 'flex';
+  });
+
+  document.getElementById('close-button').addEventListener('click', function() {
+    document.getElementById('overlay').style.display = 'none';
+  });
+
 // 變更文字＆按鈕顏色
 document.getElementById('complete').addEventListener('click', function() {
     // Get the seconds element
