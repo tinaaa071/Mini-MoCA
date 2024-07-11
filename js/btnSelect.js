@@ -41,5 +41,4 @@ addButtonGroupClickListener('.gender-group', '.gender-btn');
 addButtonGroupClickListener('.education-group', '.education-btn');
 });
 
-
   
